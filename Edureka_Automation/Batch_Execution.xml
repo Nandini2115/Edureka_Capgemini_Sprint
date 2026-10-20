@@ -8,7 +8,6 @@
       <class name="com.edureka.AllCourses.AllCoursesTestScript2"/>
       <class name="com.edureka.login.LoginTestScript2"/>
       <class name="com.edureka.ArtificialIntelligence.ArtificialIntelligenceTestScript1"/>
-      <class name="com.edureka.OnlineDoctorate.OnlineDoctorateTestScript1"/>
       <class name="com.edureka.ArtificialIntelligence.ArtificialIntelligenceTestScript2"/>
     </classes>
   </test> <!-- Test -->

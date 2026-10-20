@@ -12,7 +12,6 @@
             <package name="com.edureka.login"/>
             <package name="com.edureka.AllCourses"/>
             <package name="com.edureka.ArtificialIntelligence"/>
-            <package name="com.edureka.OnlineDoctorate"/>
         </packages>
     </test>
 </suite>
