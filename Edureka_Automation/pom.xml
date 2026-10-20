@@ -1,4 +1,3 @@
-
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
@@ -18,6 +17,8 @@
         <selenium.version>4.46.0</selenium.version>
         <testng.version>7.11.0</testng.version>
         <poi.version>5.4.1</poi.version>
+        <suiteXmlFile>Smoke.xml</suiteXmlFile>
+        <browser>chrome</browser>
     </properties>
 
     <dependencies>
@@ -29,7 +30,7 @@
             <version>${selenium.version}</version>
         </dependency>
 
-        <!-- TestNG: available to framework and test classes -->
+        <!-- TestNG -->
         <dependency>
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
@@ -41,6 +42,20 @@
             <groupId>org.apache.poi</groupId>
             <artifactId>poi-ooxml</artifactId>
             <version>${poi.version}</version>
+        </dependency>
+
+        <!-- JSON support, if used by the framework -->
+        <dependency>
+            <groupId>com.googlecode.json-simple</groupId>
+            <artifactId>json-simple</artifactId>
+            <version>1.1.1</version>
+        </dependency>
+
+        <!-- Commons IO, if used by the framework -->
+        <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+            <version>2.18.0</version>
         </dependency>
 
     </dependencies>
@@ -65,9 +80,7 @@
                 <version>3.5.4</version>
                 <configuration>
                     <suiteXmlFiles>
-                        <suiteXmlFile>
-                            ${suiteXmlFile}
-                        </suiteXmlFile>
+                        <suiteXmlFile>${suiteXmlFile}</suiteXmlFile>
                     </suiteXmlFiles>
 
                     <systemPropertyVariables>
@@ -80,5 +93,73 @@
 
         </plugins>
     </build>
+
+    <!-- TestNG execution profiles -->
+    <profiles>
+
+        <profile>
+            <id>BE</id>
+            <properties>
+                <suiteXmlFile>Batch_Execution.xml</suiteXmlFile>
+            </properties>
+        </profile>
+
+        <profile>
+            <id>CB</id>
+            <properties>
+                <suiteXmlFile>CrossBrowser.xml</suiteXmlFile>
+            </properties>
+        </profile>
+
+        <profile>
+            <id>FG</id>
+            <properties>
+                <suiteXmlFile>Functional.xml</suiteXmlFile>
+            </properties>
+        </profile>
+
+        <profile>
+            <id>IG</id>
+            <properties>
+                <suiteXmlFile>Integration.xml</suiteXmlFile>
+            </properties>
+        </profile>
+
+        <profile>
+            <id>NG</id>
+            <properties>
+                <suiteXmlFile>negative.xml</suiteXmlFile>
+            </properties>
+        </profile>
+
+        <profile>
+            <id>PL</id>
+            <properties>
+                <suiteXmlFile>parallel.xml</suiteXmlFile>
+            </properties>
+        </profile>
+
+        <profile>
+            <id>SG</id>
+            <properties>
+                <suiteXmlFile>Smoke.xml</suiteXmlFile>
+            </properties>
+        </profile>
+
+        <profile>
+            <id>SY</id>
+            <properties>
+                <suiteXmlFile>System.xml</suiteXmlFile>
+            </properties>
+        </profile>
+
+        <profile>
+            <id>GS</id>
+            <properties>
+                <suiteXmlFile>Group.xml</suiteXmlFile>
+            </properties>
+        </profile>
+
+    </profiles>
 
 </project>
