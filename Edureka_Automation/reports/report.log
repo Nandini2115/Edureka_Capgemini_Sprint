@@ -1,0 +1,358 @@
+2026-10-18 14:39:07 | Browser started: chrome | URL: https://www.edureka.co/
+2026-10-18 14:39:09 | PASSED: verifyLoginPopupOpens
+2026-10-18 14:39:17 | Browser started: chrome | URL: https://www.edureka.co/
+2026-10-18 14:39:20 | FAILED: verifyLoginWithValidCredentials | Reason: org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button type="button" class="loginsignoutnav_login_in__1Vyeh btn btn-primary">...</button> is not clickable at point (1182, 76). Other element would receive the click: <div role="dialog" aria-modal="true" class="fade loginsignup_modalname__mxGCO modal show" tabindex="-1" style="display: block;">...</div>
+  (Session info: chrome=155.0.8059.80)
+Build info: version: '4.46.0', revision: 'df5a634 df5a6341cbb5f8f06b836bd595752775627c80dc'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.12.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [78dc4c2a2c5f73b624747b67503a1b45, clickElement {id=f.5B3D02C61911039B3401804356567F6F.d.56D5364B3B7C83036CE8778C15D7A408.e.66}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 155.0.8059.80, chrome: {chromedriverVersion: 155.0.8059.84 (5869fe313571..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:48245}, goog:processID: 21876, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:48245/devtoo..., se:cdpVersion: 155.0.8059.80, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (78dc4c2a2c5f73b624747b67503a1b45)] -> xpath: //button[contains(translate(normalize-space(.),'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'log in') or contains(translate(normalize-space(.),'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'login')]]
+Session ID: 78dc4c2a2c5f73b624747b67503a1b45
+2026-10-18 14:39:20 | Failure screenshot: C:\Users\HP\eclipse-workspace\Edureka_Automation\Screenshots\verifyLoginWithValidCredentials_20261018_143920_209_a5327471.png
+2026-10-18 14:39:28 | Browser started: chrome | URL: https://www.edureka.co/
+2026-10-18 14:39:29 | PASSED: verifyPasswordFieldIsAvailable
+2026-10-18 14:43:37 | Browser started: chrome | URL: https://www.edureka.co/
+2026-10-18 14:43:38 | PASSED: verifyLoginPopupOpens
+2026-10-18 14:43:42 | Browser started: chrome | URL: https://www.edureka.co/
+2026-10-18 14:43:44 | PASSED: verifyLoginWithValidCredentials
+2026-10-18 14:43:47 | Browser started: chrome | URL: https://www.edureka.co/
+2026-10-18 14:43:51 | PASSED: verifyPasswordFieldIsAvailable
+2026-10-18 14:44:15 | Browser started: chrome | URL: https://www.edureka.co/
+2026-10-18 14:44:17 | PASSED: verifyLoginPopupOpens
+2026-10-18 14:44:26 | Browser started: chrome | URL: https://www.edureka.co/
+2026-10-18 14:44:28 | PASSED: verifyLoginWithValidCredentials
+2026-10-18 14:44:38 | Browser started: chrome | URL: https://www.edureka.co/
+2026-10-18 14:44:39 | PASSED: verifyPasswordFieldIsAvailable
+2026-10-18 14:45:22 | Browser started: chrome | URL: https://www.edureka.co/
+2026-10-18 14:45:24 | PASSED: verifyInvalidLoginInput
+2026-10-18 14:45:42 | Browser started: chrome | URL: https://www.edureka.co/
+2026-10-18 14:45:44 | PASSED: verifyLoginCanBeRetried
+2026-10-18 14:45:47 | Browser started: chrome | URL: https://www.edureka.co/
+2026-10-18 14:45:49 | PASSED: verifyLoginNavigationToCourses
+2026-10-18 14:46:12 | Browser started: chrome | URL: https://www.edureka.co/
+2026-10-18 14:46:26 | PASSED: verifyAiCategoryOpens
+2026-10-18 14:46:30 | Browser started: chrome | URL: https://www.edureka.co/
+2026-10-18 14:47:00 | FAILED: verifyAiCourseHeadings | Reason: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of all elements located by By.cssSelector: h1, h2, h3, but element #8 was invisible: [[ChromeDriver: chrome on windows (49ce5e1fd074af6520f79fff9c722cbf)] -> css selector: h1, h2, h3]
+(tried for 15 seconds with 500 milliseconds interval)
+Build info: version: '4.46.0', revision: 'df5a634 df5a6341cbb5f8f06b836bd595752775627c80dc'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.12.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 155.0.8059.80, chrome: {chromedriverVersion: 155.0.8059.84 (5869fe313571..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:20746}, goog:processID: 12088, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:20746/devtoo..., se:cdpVersion: 155.0.8059.80, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 49ce5e1fd074af6520f79fff9c722cbf
+2026-10-18 14:47:00 | Failure screenshot: C:\Users\HP\eclipse-workspace\Edureka_Automation\Screenshots\verifyAiCourseHeadings_20261018_144700_638_dbe1345d.png
+2026-10-18 14:47:11 | Browser started: chrome | URL: https://www.edureka.co/
+2026-10-18 14:47:41 | FAILED: verifyAiCourseOverview | Reason: org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 29.706
+  (Session info: chrome=155.0.8059.80)
+Build info: version: '4.46.0', revision: 'df5a634 df5a6341cbb5f8f06b836bd595752775627c80dc'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.12.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a690361b8c53d565394208cf57ed3664, get {url=https://www.edureka.co/all-courses}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 155.0.8059.80, chrome: {chromedriverVersion: 155.0.8059.84 (5869fe313571..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:1556}, goog:processID: 10720, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:1556/devtool..., se:cdpVersion: 155.0.8059.80, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a690361b8c53d565394208cf57ed3664
+2026-10-18 14:47:41 | Failure screenshot: C:\Users\HP\eclipse-workspace\Edureka_Automation\Screenshots\verifyAiCourseOverview_20261018_144741_684_29768513.png
+2026-10-18 16:19:26 | Browser started: chrome | URL: https://www.edureka.co/
+2026-10-18 16:20:12 | PASSED: verifyAiCategoryOpens
+2026-10-18 16:20:14 | Browser started: chrome | URL: https://www.edureka.co/
+2026-10-18 16:21:16 | FAILED: verifyAiCourseHeadings | Reason: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of all elements located by By.cssSelector: h1, h2, h3, but element #8 was invisible: [[ChromeDriver: chrome on windows (ae70847f31bf44b8547a92957ce1f05f)] -> css selector: h1, h2, h3]
+(tried for 15 seconds with 500 milliseconds interval)
+Build info: version: '4.46.0', revision: 'df5a634 df5a6341cbb5f8f06b836bd595752775627c80dc'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.12.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 155.0.8059.80, chrome: {chromedriverVersion: 155.0.8059.84 (5869fe313571..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:14386}, goog:processID: 25572, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:14386/devtoo..., se:cdpVersion: 155.0.8059.80, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ae70847f31bf44b8547a92957ce1f05f
+2026-10-18 16:21:16 | Failure screenshot: C:\Users\HP\eclipse-workspace\Edureka_Automation\Screenshots\verifyAiCourseHeadings_20261018_162116_320_2eb7cb1b.png
+2026-10-18 16:21:20 | Browser started: chrome | URL: https://www.edureka.co/
+2026-10-18 16:22:07 | PASSED: verifyAiCourseOverview
+2026-10-18 16:24:14 | Browser started: chrome | URL: https://www.edureka.co/
+2026-10-18 16:24:22 | FAILED: verifyAiCategoryOpens | Reason: org.openqa.selenium.NoSuchSessionException: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=155.0.8059.80)
+Build info: version: '4.46.0', revision: 'df5a634 df5a6341cbb5f8f06b836bd595752775627c80dc'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.12.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5766f19af2060bcead670f198d55be3a, findElement {using=xpath, value=//a[contains(translate(normalize-space(.),'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'artificial intelligence') or contains(translate(normalize-space(.),'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'ai courses')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 155.0.8059.80, chrome: {chromedriverVersion: 155.0.8059.84 (5869fe313571..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:16893}, goog:processID: 19700, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:16893/devtoo..., se:cdpVersion: 155.0.8059.80, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5766f19af2060bcead670f198d55be3a
+2026-10-18 16:24:22 | Screenshot capture failed: invalid session id
+Build info: version: '4.46.0', revision: 'df5a634 df5a6341cbb5f8f06b836bd595752775627c80dc'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.12.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5766f19af2060bcead670f198d55be3a, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 155.0.8059.80, chrome: {chromedriverVersion: 155.0.8059.84 (5869fe313571..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:16893}, goog:processID: 19700, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:16893/devtoo..., se:cdpVersion: 155.0.8059.80, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5766f19af2060bcead670f198d55be3a
+2026-10-18 16:24:24 | Browser started: chrome | URL: https://www.edureka.co/
+2026-10-18 16:24:27 | FAILED: verifyAiCourseHeadings | Reason: org.openqa.selenium.NoSuchSessionException: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=155.0.8059.80)
+Build info: version: '4.46.0', revision: 'df5a634 df5a6341cbb5f8f06b836bd595752775627c80dc'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.12.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3c7544b001cb7ee6759355b9f1e51a45, findElement {using=xpath, value=//a[contains(translate(normalize-space(.),'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'artificial intelligence') or contains(translate(normalize-space(.),'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'ai courses')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 155.0.8059.80, chrome: {chromedriverVersion: 155.0.8059.84 (5869fe313571..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:17431}, goog:processID: 8336, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:17431/devtoo..., se:cdpVersion: 155.0.8059.80, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3c7544b001cb7ee6759355b9f1e51a45
+2026-10-18 16:24:28 | Screenshot capture failed: invalid session id
+Build info: version: '4.46.0', revision: 'df5a634 df5a6341cbb5f8f06b836bd595752775627c80dc'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.12.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3c7544b001cb7ee6759355b9f1e51a45, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 155.0.8059.80, chrome: {chromedriverVersion: 155.0.8059.84 (5869fe313571..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:17431}, goog:processID: 8336, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:17431/devtoo..., se:cdpVersion: 155.0.8059.80, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3c7544b001cb7ee6759355b9f1e51a45
+2026-10-18 16:24:29 | Browser started: chrome | URL: https://www.edureka.co/
+2026-10-18 16:24:46 | Browser started: chrome | URL: https://www.edureka.co/
+2026-10-18 16:24:48 | PASSED: verifyAiCategoryOpens
+2026-10-18 16:24:51 | Browser started: chrome | URL: https://www.edureka.co/
+2026-10-18 16:24:53 | PASSED: verifyAiCourseHeadings
+2026-10-18 16:24:55 | Browser started: chrome | URL: https://www.edureka.co/
+2026-10-18 16:24:56 | PASSED: verifyAiCourseOverview
+2026-10-18 16:26:39 | Browser started: chrome | URL: https://www.edureka.co/
+2026-10-18 16:26:42 | PASSED: verifyAiPageReload
+2026-10-18 16:26:44 | Browser started: chrome | URL: https://www.edureka.co/
+2026-10-18 16:26:45 | PASSED: verifyCourseDetailsNavigation
+2026-10-18 16:26:48 | Browser started: chrome | URL: https://www.edureka.co/
+2026-10-18 16:26:49 | PASSED: verifyEnquiryFormValidationIfAvailable
+2026-10-18 16:32:30 | Browser started: chrome | URL: https://www.edureka.co/
+2026-10-18 16:32:33 | PASSED: verifyAiPageReload
+2026-10-18 16:32:35 | Browser started: chrome | URL: https://www.edureka.co/
+2026-10-18 16:32:56 | FAILED: verifyCourseDetailsNavigation | Reason: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for com.edureka.ArtificialIntelligence.ArtificialIntelligenceTestScript2$$Lambda/0x000001a701256b40@378bd86d
+(tried for 20 seconds with 500 milliseconds interval)
+Build info: version: '4.46.0', revision: 'df5a634 df5a6341cbb5f8f06b836bd595752775627c80dc'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.12.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 155.0.8059.80, chrome: {chromedriverVersion: 155.0.8059.84 (5869fe313571..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:45548}, goog:processID: 15580, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:45548/devtoo..., se:cdpVersion: 155.0.8059.80, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c63b08af6dab32f8e9c778c03eb75f6c
+2026-10-18 16:32:57 | Failure screenshot: C:\Users\HP\eclipse-workspace\Edureka_Automation\Screenshots\verifyCourseDetailsNavigation_20261018_163256_772_f024c5ad.png
+2026-10-18 16:32:59 | Browser started: chrome | URL: https://www.edureka.co/
+2026-10-18 16:33:01 | FAILED: verifyEnquiryFormValidationIfAvailable | Reason: java.lang.AssertionError: TC_AI_09 BLOCKED: No form with an email input was found. Inspect the live page and identify the actual form.
+2026-10-18 16:33:02 | Failure screenshot: C:\Users\HP\eclipse-workspace\Edureka_Automation\Screenshots\verifyEnquiryFormValidationIfAvailable_20261018_163301_835_f2c063f5.png
+2026-10-18 16:33:17 | Browser started: chrome | URL: https://www.edureka.co/
+2026-10-18 16:33:20 | PASSED: verifyAiPageReload
+2026-10-18 16:33:22 | Browser started: chrome | URL: https://www.edureka.co/
+2026-10-18 16:33:43 | FAILED: verifyCourseDetailsNavigation | Reason: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for com.edureka.ArtificialIntelligence.ArtificialIntelligenceTestScript2$$Lambda/0x0000020e1d252b40@a10c1b5
+(tried for 20 seconds with 500 milliseconds interval)
+Build info: version: '4.46.0', revision: 'df5a634 df5a6341cbb5f8f06b836bd595752775627c80dc'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.12.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 155.0.8059.80, chrome: {chromedriverVersion: 155.0.8059.84 (5869fe313571..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:10706}, goog:processID: 23576, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:10706/devtoo..., se:cdpVersion: 155.0.8059.80, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 781b8aef4bd0beca5334a143c1594bb7
+2026-10-18 16:33:44 | Failure screenshot: C:\Users\HP\eclipse-workspace\Edureka_Automation\Screenshots\verifyCourseDetailsNavigation_20261018_163343_990_cdb4e128.png
+2026-10-18 16:33:46 | Browser started: chrome | URL: https://www.edureka.co/
+2026-10-18 16:33:49 | FAILED: verifyEnquiryFormValidationIfAvailable | Reason: java.lang.AssertionError: TC_AI_09 BLOCKED: No form with an email input was found. Inspect the live page and identify the actual form.
+2026-10-18 16:33:49 | Failure screenshot: C:\Users\HP\eclipse-workspace\Edureka_Automation\Screenshots\verifyEnquiryFormValidationIfAvailable_20261018_163349_244_8bb049e5.png
+2026-10-18 16:35:33 | Browser started: chrome | URL: https://www.edureka.co/
+2026-10-18 16:35:36 | PASSED: verifyAiPageReload
+2026-10-18 16:35:38 | Browser started: chrome | URL: https://www.edureka.co/
+2026-10-18 16:35:59 | FAILED: verifyCourseDetailsNavigation | Reason: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for objRepo.ArtificialIntelligencePage$$Lambda/0x000001e181256340@644abb8f
+(tried for 20 seconds with 500 milliseconds interval)
+Build info: version: '4.46.0', revision: 'df5a634 df5a6341cbb5f8f06b836bd595752775627c80dc'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.12.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 155.0.8059.80, chrome: {chromedriverVersion: 155.0.8059.84 (5869fe313571..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:16847}, goog:processID: 11808, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:16847/devtoo..., se:cdpVersion: 155.0.8059.80, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d5dce58ce37b21f25394a913860d4452
+2026-10-18 16:35:59 | Failure screenshot: C:\Users\HP\eclipse-workspace\Edureka_Automation\Screenshots\verifyCourseDetailsNavigation_20261018_163559_594_b4fa34ab.png
+2026-10-18 16:36:02 | Browser started: chrome | URL: https://www.edureka.co/
+2026-10-18 16:36:02 | FAILED: verifyEnquiryFormValidationIfAvailable | Reason: java.lang.AssertionError: TC_AI_09 BLOCKED: No form with an email input was found. Inspect the live page and identify the actual form.
+2026-10-18 16:36:02 | Failure screenshot: C:\Users\HP\eclipse-workspace\Edureka_Automation\Screenshots\verifyEnquiryFormValidationIfAvailable_20261018_163602_379_b6e2565d.png
+2026-10-18 19:37:32 | Browser started: chrome | URL: https://www.edureka.co/
+2026-10-18 19:37:36 | PASSED: verifyAiPageReload
+2026-10-18 19:37:38 | Browser started: chrome | URL: https://www.edureka.co/
+2026-10-18 19:38:00 | FAILED: verifyCourseDetailsNavigation | Reason: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for objRepo.ArtificialIntelligencePage$$Lambda/0x0000027d10252b40@644abb8f
+(tried for 20 seconds with 500 milliseconds interval)
+Build info: version: '4.46.0', revision: 'df5a634 df5a6341cbb5f8f06b836bd595752775627c80dc'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.12.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 155.0.8059.80, chrome: {chromedriverVersion: 155.0.8059.84 (5869fe313571..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:13913}, goog:processID: 24348, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:13913/devtoo..., se:cdpVersion: 155.0.8059.80, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4d4955622ad7c39e96d240aa2980b32b
+2026-10-18 19:38:00 | Failure screenshot: C:\Users\HP\eclipse-workspace\Edureka_Automation\Screenshots\verifyCourseDetailsNavigation_20261018_193800_346_eded0287.png
+2026-10-18 19:38:03 | Browser started: chrome | URL: https://www.edureka.co/
+2026-10-18 19:38:05 | FAILED: verifyEnquiryFormValidationIfAvailable | Reason: java.lang.AssertionError: TC_AI_09 BLOCKED: No form with an email input was found. Inspect the live page and identify the actual form.
+2026-10-18 19:38:05 | Failure screenshot: C:\Users\HP\eclipse-workspace\Edureka_Automation\Screenshots\verifyEnquiryFormValidationIfAvailable_20261018_193805_455_35dd847e.png
+2026-10-18 19:49:22 | Browser started: chrome | URL: https://www.edureka.co/
+2026-10-18 19:49:26 | PASSED: verifyAiPageReload
+2026-10-18 19:49:28 | Browser started: chrome | URL: https://www.edureka.co/
+2026-10-18 19:49:32 | PASSED: verifyCourseDetailsNavigation
+2026-10-18 19:49:34 | Browser started: chrome | URL: https://www.edureka.co/
+2026-10-18 19:49:37 | FAILED: verifyEnquiryFormValidationIfAvailable | Reason: java.lang.AssertionError: TC_AI_09 incomplete: implement the actual empty-form submission and assert that validation blocks submission.
+2026-10-18 19:49:37 | Failure screenshot: C:\Users\HP\eclipse-workspace\Edureka_Automation\Screenshots\verifyEnquiryFormValidationIfAvailable_20261018_194937_327_2904b003.png
+2026-10-18 19:52:01 | Browser started: chrome | URL: https://www.edureka.co/
+2026-10-18 19:52:04 | PASSED: verifyAiPageReload
+2026-10-18 19:52:06 | Browser started: chrome | URL: https://www.edureka.co/
+2026-10-18 19:52:09 | PASSED: verifyCourseDetailsNavigation
+2026-10-18 19:52:11 | Browser started: chrome | URL: https://www.edureka.co/
+2026-10-18 19:52:13 | FAILED: verifyEnquiryFormValidationIfAvailable | Reason: java.lang.AssertionError: Form field is already populated. Use a clean form before testing empty submission. expected [true] but found [false]
+2026-10-18 19:52:13 | Failure screenshot: C:\Users\HP\eclipse-workspace\Edureka_Automation\Screenshots\verifyEnquiryFormValidationIfAvailable_20261018_195213_325_0bb74dbb.png
+2026-10-18 19:56:59 | Browser started: chrome | URL: https://www.edureka.co/
+2026-10-18 19:57:03 | PASSED: verifyAiPageReload
+2026-10-18 19:57:05 | Browser started: chrome | URL: https://www.edureka.co/
+2026-10-18 19:57:08 | PASSED: verifyCourseDetailsNavigation
+2026-10-18 19:57:09 | Browser started: chrome | URL: https://www.edureka.co/
+2026-10-18 19:57:14 | FAILED: verifyEnquiryFormValidationIfAvailable | Reason: org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+  (Session info: chrome=155.0.8059.80)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Build info: version: '4.46.0', revision: 'df5a634 df5a6341cbb5f8f06b836bd595752775627c80dc'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.12.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b815beaa61de5b21dd7490ee708f5eac, findChildElements {using=css selector, value=:invalid, id=f.D459791C42050690AA74770B209C0A93.d.57D60551FE932DC92F4F72A2D87DB90B.e.9}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 155.0.8059.80, chrome: {chromedriverVersion: 155.0.8059.84 (5869fe313571..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:2268}, goog:processID: 1888, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:2268/devtool..., se:cdpVersion: 155.0.8059.80, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b815beaa61de5b21dd7490ee708f5eac
+2026-10-18 19:57:14 | Failure screenshot: C:\Users\HP\eclipse-workspace\Edureka_Automation\Screenshots\verifyEnquiryFormValidationIfAvailable_20261018_195714_298_4f7c086b.png
+2026-10-18 19:59:20 | Browser started: chrome | URL: https://www.edureka.co/
+2026-10-18 19:59:24 | PASSED: verifyAiPageReload
+2026-10-18 19:59:26 | Browser started: chrome | URL: https://www.edureka.co/
+2026-10-18 19:59:28 | PASSED: verifyCourseDetailsNavigation
+2026-10-18 19:59:30 | Browser started: chrome | URL: https://www.edureka.co/
+2026-10-18 19:59:33 | FAILED: verifyEnquiryFormValidationIfAvailable | Reason: java.lang.AssertionError: TC_AI_09 failed: Empty submission was not confirmed as blocked. expected [true] but found [false]
+2026-10-18 19:59:33 | Failure screenshot: C:\Users\HP\eclipse-workspace\Edureka_Automation\Screenshots\verifyEnquiryFormValidationIfAvailable_20261018_195933_609_e68bbcb9.png
+2026-10-18 20:01:22 | Browser started: chrome | URL: https://www.edureka.co/
+2026-10-18 20:01:25 | PASSED: verifyAiPageReload
+2026-10-18 20:01:27 | Browser started: chrome | URL: https://www.edureka.co/
+2026-10-18 20:01:30 | PASSED: verifyCourseDetailsNavigation
+2026-10-18 20:01:31 | Browser started: chrome | URL: https://www.edureka.co/
+2026-10-18 20:01:34 | FAILED: verifyEnquiryFormValidationIfAvailable | Reason: java.lang.AssertionError: TC_AI_09 failed: Empty form validation was not detected expected [true] but found [false]
+2026-10-18 20:01:35 | Failure screenshot: C:\Users\HP\eclipse-workspace\Edureka_Automation\Screenshots\verifyEnquiryFormValidationIfAvailable_20261018_200134_765_afe28a92.png
+2026-10-18 20:07:23 | Browser started: chrome | URL: https://www.edureka.co/
+2026-10-18 20:07:24 | FAILED: verifyAISearchWithInvalidCourse | Reason: java.lang.AssertionError: Search box is not available on the AI listing page expected object to not be null
+2026-10-18 20:07:24 | Failure screenshot: C:\Users\HP\eclipse-workspace\Edureka_Automation\Screenshots\verifyAISearchWithInvalidCourse_20261018_200724_600_b0a30501.png
+2026-10-18 20:07:27 | Browser started: chrome | URL: https://www.edureka.co/
+2026-10-18 20:07:29 | PASSED: verifyAiPageReload
+2026-10-18 20:07:31 | Browser started: chrome | URL: https://www.edureka.co/
+2026-10-18 20:07:33 | PASSED: verifyCourseDetailsNavigation
+2026-10-18 21:17:22 | Browser started: chrome | URL: https://www.edureka.co/
+2026-10-18 21:17:25 | PASSED: verifyAiPageReload
+2026-10-18 21:17:28 | Browser started: chrome | URL: https://www.edureka.co/
+2026-10-18 21:17:31 | PASSED: verifyCourseDetailsNavigation
+2026-10-18 21:17:33 | Browser started: chrome | URL: https://www.edureka.co/
+2026-10-18 21:17:36 | PASSED: verifyInvalidCourseUrl
+2026-10-18 21:18:22 | Browser started: chrome | URL: https://www.edureka.co/
+2026-10-18 21:18:46 | PASSED: verifyAiCategoryIsAvailable
+2026-10-18 21:18:49 | Browser started: chrome | URL: https://www.edureka.co/
+2026-10-18 21:19:11 | PASSED: verifyAllCoursesCatalogue
+2026-10-18 21:19:14 | Browser started: chrome | URL: https://www.edureka.co/
+2026-10-18 21:19:36 | PASSED: verifyAllCoursesPageLoads
+2026-10-18 21:37:20 | Browser started: chrome | URL: https://www.edureka.co/
+2026-10-18 21:38:09 | PASSED: verifyAiCategoryIsAvailable
+2026-10-18 21:38:11 | Browser started: chrome | URL: https://www.edureka.co/
+2026-10-18 21:38:49 | FAILED: verifyAllCoursesCatalogue | Reason: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of all elements located by By.cssSelector: h1, h2, h3, [class*='course-title'], but element #22 was invisible: [[ChromeDriver: chrome on windows (c1fded05db5013b9b464638c6119251c)] -> css selector: h1, h2, h3, [class*='course-title']]
+(tried for 15 seconds with 500 milliseconds interval)
+Build info: version: '4.46.0', revision: 'df5a634 df5a6341cbb5f8f06b836bd595752775627c80dc'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.12.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 155.0.8059.80, chrome: {chromedriverVersion: 155.0.8059.84 (5869fe313571..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53056}, goog:processID: 2884, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53056/devtoo..., se:cdpVersion: 155.0.8059.80, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c1fded05db5013b9b464638c6119251c
+2026-10-18 21:38:49 | Failure screenshot: C:\Users\HP\eclipse-workspace\Edureka_Automation\Screenshots\verifyAllCoursesCatalogue_20261018_213849_737_d9ddb3bf.png
+2026-10-18 21:38:53 | Browser started: chrome | URL: https://www.edureka.co/
+2026-10-18 21:39:17 | PASSED: verifyAllCoursesPageLoads
+2026-10-18 21:50:37 | Browser started: chrome | URL: https://www.edureka.co/
+2026-10-18 21:51:27 | PASSED: verifyAiCategoryIsAvailable
+2026-10-18 21:51:31 | Browser started: chrome | URL: https://www.edureka.co/
+2026-10-18 21:51:56 | PASSED: verifyAllCoursesCatalogue
+2026-10-18 21:52:00 | Browser started: chrome | URL: https://www.edureka.co/
+2026-10-18 21:52:25 | PASSED: verifyAllCoursesPageLoads
+2026-10-18 21:52:53 | Browser started: chrome | URL: https://www.edureka.co/
+2026-10-18 21:52:56 | FAILED: verifyAiCategoryIsAvailable | Reason: org.openqa.selenium.NoSuchSessionException: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=155.0.8059.80)
+Build info: version: '4.46.0', revision: 'df5a634 df5a6341cbb5f8f06b836bd595752775627c80dc'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.12.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [27abdcb50e8c9bfaf78aedc4a7c580ea, findElement {value=//*[self::a or self::button][contains(translate(normalize-space(.),'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'artificial intelligence')], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 155.0.8059.80, chrome: {chromedriverVersion: 155.0.8059.84 (5869fe313571..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56674}, goog:processID: 26316, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56674/devtoo..., se:cdpVersion: 155.0.8059.80, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 27abdcb50e8c9bfaf78aedc4a7c580ea
+2026-10-18 21:52:57 | Screenshot capture failed: invalid session id
+Build info: version: '4.46.0', revision: 'df5a634 df5a6341cbb5f8f06b836bd595752775627c80dc'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.12.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [27abdcb50e8c9bfaf78aedc4a7c580ea, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 155.0.8059.80, chrome: {chromedriverVersion: 155.0.8059.84 (5869fe313571..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56674}, goog:processID: 26316, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56674/devtoo..., se:cdpVersion: 155.0.8059.80, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 27abdcb50e8c9bfaf78aedc4a7c580ea
+2026-10-18 21:52:59 | SKIPPED: verifyAllCoursesCatalogue
+2026-10-18 21:53:01 | Browser started: chrome | URL: https://www.edureka.co/
+2026-10-18 21:53:01 | SKIPPED: verifyAllCoursesPageLoads
+2026-10-18 21:53:16 | Browser started: chrome | URL: https://www.edureka.co/
+2026-10-18 21:53:19 | FAILED: verifyAiCategoryIsAvailable | Reason: org.openqa.selenium.NoSuchSessionException: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=155.0.8059.80)
+Build info: version: '4.46.0', revision: 'df5a634 df5a6341cbb5f8f06b836bd595752775627c80dc'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.12.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b161e15306a3b7e57ba3b526322022ec, findElement {value=//*[self::a or self::button][contains(translate(normalize-space(.),'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'artificial intelligence')], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 155.0.8059.80, chrome: {chromedriverVersion: 155.0.8059.84 (5869fe313571..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:11218}, goog:processID: 7660, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:11218/devtoo..., se:cdpVersion: 155.0.8059.80, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b161e15306a3b7e57ba3b526322022ec
+2026-10-18 21:53:19 | Screenshot capture failed: invalid session id
+Build info: version: '4.46.0', revision: 'df5a634 df5a6341cbb5f8f06b836bd595752775627c80dc'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.12.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b161e15306a3b7e57ba3b526322022ec, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 155.0.8059.80, chrome: {chromedriverVersion: 155.0.8059.84 (5869fe313571..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:11218}, goog:processID: 7660, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:11218/devtoo..., se:cdpVersion: 155.0.8059.80, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b161e15306a3b7e57ba3b526322022ec
+2026-10-18 21:53:21 | SKIPPED: verifyAllCoursesCatalogue
+2026-10-18 21:53:22 | Browser started: chrome | URL: https://www.edureka.co/
+2026-10-18 21:53:22 | SKIPPED: verifyAllCoursesPageLoads
+2026-10-18 21:56:59 | Browser started: chrome | URL: https://www.edureka.co/
+2026-10-18 21:57:29 | FAILED: verifyAiCategoryIsAvailable | Reason: org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 28.997
+  (Session info: chrome=155.0.8059.80)
+Build info: version: '4.46.0', revision: 'df5a634 df5a6341cbb5f8f06b836bd595752775627c80dc'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.12.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [29770c05f715152976420a16527b8161, get {url=https://www.edureka.co/all-courses}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 155.0.8059.80, chrome: {chromedriverVersion: 155.0.8059.84 (5869fe313571..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:42884}, goog:processID: 16276, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:42884/devtoo..., se:cdpVersion: 155.0.8059.80, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 29770c05f715152976420a16527b8161
+2026-10-18 21:57:30 | Failure screenshot: C:\Users\HP\eclipse-workspace\Edureka_Automation\Screenshots\verifyAiCategoryIsAvailable_20261018_215729_976_58d858e5.png
+2026-10-18 21:57:32 | Browser started: chrome | URL: https://www.edureka.co/
+2026-10-18 21:57:58 | PASSED: verifyAllCoursesCatalogue
+2026-10-18 21:58:04 | Browser started: chrome | URL: https://www.edureka.co/
+2026-10-18 21:58:28 | PASSED: verifyAllCoursesPageLoads
+2026-10-18 22:02:07 | Browser started: chrome | URL: https://www.edureka.co/
+2026-10-18 22:02:54 | PASSED: verifyAiCategoryIsAvailable
+2026-10-18 22:02:57 | Browser started: chrome | URL: https://www.edureka.co/
+2026-10-18 22:03:22 | PASSED: verifyAllCoursesCatalogue
+2026-10-18 22:03:26 | Browser started: chrome | URL: https://www.edureka.co/
+2026-10-18 22:03:49 | PASSED: verifyAllCoursesPageLoads
+2026-10-18 22:08:15 | Browser started: chrome | URL: https://www.edureka.co/
+2026-10-18 22:08:25 | PASSED: verifyAiCategoryIsAvailable
+2026-10-18 22:08:27 | Browser started: chrome | URL: https://www.edureka.co/
+2026-10-18 22:08:29 | PASSED: verifyAllCoursesCatalogue
+2026-10-18 22:08:32 | Browser started: chrome | URL: https://www.edureka.co/
+2026-10-18 22:08:35 | PASSED: verifyAllCoursesPageLoads
+2026-10-18 22:13:50 | Browser started: chrome | URL: https://www.edureka.co/
+2026-10-18 22:13:56 | PASSED: verifyAiCategoryNavigation
+2026-10-18 22:14:28 | Browser started: chrome | URL: https://www.edureka.co/
+2026-10-18 22:14:28 | PASSED: verifyNonexistentCourseSearch
+2026-10-18 22:14:33 | Browser started: chrome | URL: https://www.edureka.co/
+2026-10-18 22:14:34 | PASSED: verifyPageTitleAcrossBrowserRun
+2026-10-18 22:17:57 | Browser started: chrome | URL: https://www.edureka.co/
+2026-10-18 22:18:04 | PASSED: verifyAiCategoryNavigation
+2026-10-18 22:18:20 | Browser started: chrome | URL: https://www.edureka.co/
+2026-10-18 22:18:23 | FAILED: verifyNonexistentCourseSearch | Reason: java.lang.AssertionError: No visible, enabled search field was found. Inspect the actual search locator. expected object to not be null
+2026-10-18 22:18:23 | Failure screenshot: C:\Users\HP\eclipse-workspace\Edureka_Automation\Screenshots\verifyNonexistentCourseSearch_20261018_221823_752_8fe4e9fa.png
+2026-10-18 22:18:27 | Browser started: chrome | URL: https://www.edureka.co/
+2026-10-18 22:18:31 | PASSED: verifyPageTitleAcrossBrowserRun
+2026-10-18 22:18:43 | Browser started: chrome | URL: https://www.edureka.co/
+2026-10-18 22:18:47 | PASSED: verifyAiCategoryNavigation
+2026-10-18 22:18:50 | Browser started: chrome | URL: https://www.edureka.co/
+2026-10-18 22:18:51 | FAILED: verifyNonexistentCourseSearch | Reason: java.lang.AssertionError: No visible, enabled search field was found. Inspect the actual search locator. expected object to not be null
+2026-10-18 22:18:51 | Failure screenshot: C:\Users\HP\eclipse-workspace\Edureka_Automation\Screenshots\verifyNonexistentCourseSearch_20261018_221851_164_5acc4021.png
+2026-10-18 22:18:53 | Browser started: chrome | URL: https://www.edureka.co/
+2026-10-18 22:18:53 | PASSED: verifyPageTitleAcrossBrowserRun
+2026-10-19 09:59:54 | Browser started: chrome | URL: data:,
+2026-10-19 10:00:14 | FAILED: verifyAiCategoryIsAvailable | Reason: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element found by By.xpath: //*[self::a or self::button][contains(translate(normalize-space(.),'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'artificial intelligence')], but... org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[self::a or self::button][contains(translate(normalize-space(.),'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'artificial intelligence')]"}.
+(tried for 15 seconds with 500 milliseconds interval)
+Build info: version: '4.46.0', revision: 'df5a634 df5a6341cbb5f8f06b836bd595752775627c80dc'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.12.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 155.0.8059.80, chrome: {chromedriverVersion: 155.0.8059.84 (5869fe313571..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51943}, goog:processID: 3420, networkConnectionEnabled: false, pageLoadStrategy: eager, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51943/devtoo..., se:cdpVersion: 155.0.8059.80, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 15b632569cd89c9534a0c38a42df45ed
+2026-10-19 10:00:14 | Failure screenshot: C:\Users\HP\eclipse-workspace\Edureka_Automation\Screenshots\verifyAiCategoryIsAvailable_20261019_100014_078_29fa9728.png
+2026-10-19 10:00:58 | Browser started: chrome | URL: https://www.edureka.co/
+2026-10-19 10:09:07 | SKIPPED: verifyAiCategoryIsAvailable
+2026-10-19 10:09:09 | Browser started: chrome | URL: https://www.edureka.co/
+2026-10-19 10:09:09 | SKIPPED: verifyAllCoursesCatalogue
+2026-10-19 10:09:11 | Browser started: chrome | URL: https://www.edureka.co/
+2026-10-19 10:09:11 | SKIPPED: verifyAllCoursesPageLoads
+2026-10-19 10:09:29 | Browser started: chrome | URL: https://www.edureka.co/
+2026-10-19 10:09:34 | PASSED: verifyAiCategoryIsAvailable
+2026-10-19 10:09:36 | Browser started: chrome | URL: https://www.edureka.co/
+2026-10-19 10:09:39 | PASSED: verifyAllCoursesCatalogue
+2026-10-19 10:09:41 | Browser started: chrome | URL: https://www.edureka.co/
+2026-10-19 10:09:42 | PASSED: verifyAllCoursesPageLoads

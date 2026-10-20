@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Edureka Group Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Selected Test Groups(failed)">
+    <groups>
+      <run>
+        <include name="smoke"/>
+        <include name="functional"/>
+        <include name="integration"/>
+        <include name="system"/>
+        <include name="negative"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.edureka.login.LoginTestScript2">
+        <methods>
+          <include name="verifyInvalidLoginInput"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.edureka.login.LoginTestScript2 -->
+      <class name="com.edureka.ArtificialIntelligence.ArtificialIntelligenceTestScript2">
+        <methods>
+          <include name="verifyCourseDetailsNavigation"/>
+          <include name="verifyRequiredFieldValidation"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.edureka.ArtificialIntelligence.ArtificialIntelligenceTestScript2 -->
+      <class name="com.edureka.OnlineDoctorate.OnlineDoctorateTestScript1">
+        <methods>
+          <include name="verifyDoctorateLandingPageLoads"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.edureka.OnlineDoctorate.OnlineDoctorateTestScript1 -->
+    </classes>
+  </test> <!-- Selected Test Groups(failed) -->
+</suite> <!-- Failed suite [Edureka Group Suite] -->

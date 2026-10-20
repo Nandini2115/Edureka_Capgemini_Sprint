@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="12" total="20" passed="8" failed="0" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[Browser started: chrome | URL: https://www.edureka.co/]]>
+    </line>
+    <line>
+      <![CDATA[Starting TC_LOGIN_02]]>
+    </line>
+    <line>
+      <![CDATA[Login action completed; verify the authenticated state]]>
+    </line>
+    <line>
+      <![CDATA[Browser started: chrome | URL: https://www.edureka.co/]]>
+    </line>
+    <line>
+      <![CDATA[Starting TC_LOGIN_08]]>
+    </line>
+    <line>
+      <![CDATA[Passed: Password field is visible]]>
+    </line>
+    <line>
+      <![CDATA[Browser started: chrome | URL: https://www.edureka.co/]]>
+    </line>
+    <line>
+      <![CDATA[Starting TC_AI_02]]>
+    </line>
+    <line>
+      <![CDATA[Passed: AI headings displayed]]>
+    </line>
+    <line>
+      <![CDATA[Browser started: chrome | URL: https://www.edureka.co/]]>
+    </line>
+    <line>
+      <![CDATA[Starting TC_AI_04]]>
+    </line>
+    <line>
+      <![CDATA[Page opened; verify course overview text separately]]>
+    </line>
+    <line>
+      <![CDATA[Browser started: chrome | URL: https://www.edureka.co/]]>
+    </line>
+    <line>
+      <![CDATA[TC_ODP_004: Two program details pages inspected and compared]]>
+    </line>
+    <line>
+      <![CDATA[Browser started: chrome | URL: https://www.edureka.co/]]>
+    </line>
+    <line>
+      <![CDATA[TC_ODP_006 PASSED: Apply Now destination or form detected]]>
+    </line>
+    <line>
+      <![CDATA[Browser started: chrome | URL: https://www.edureka.co/]]>
+    </line>
+    <line>
+      <![CDATA[TC_ODP_001 PASSED: Landing heading and program links verified]]>
+    </line>
+    <line>
+      <![CDATA[Browser started: chrome | URL: https://www.edureka.co/]]>
+    </line>
+    <line>
+      <![CDATA[TC_AI_04 PASSED: Course details navigation verified.]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2026-10-20T11:43:02 IST" name="Edureka Functional Suite" finished-at="2026-10-20T11:45:38 IST" duration-ms="156361">
+    <groups>
+      <group name="functional">
+        <method signature="ArtificialIntelligenceTestScript1.verifyAiCourseHeadings()[pri:0, instance:com.edureka.ArtificialIntelligence.ArtificialIntelligenceTestScript1@752325ad]" name="verifyAiCourseHeadings" class="com.edureka.ArtificialIntelligence.ArtificialIntelligenceTestScript1"/>
+        <method signature="ArtificialIntelligenceTestScript1.verifyAiCourseOverview()[pri:0, instance:com.edureka.ArtificialIntelligence.ArtificialIntelligenceTestScript1@752325ad]" name="verifyAiCourseOverview" class="com.edureka.ArtificialIntelligence.ArtificialIntelligenceTestScript1"/>
+        <method signature="ArtificialIntelligenceTestScript2.verifyCourseDetailsNavigation()[pri:0, instance:com.edureka.ArtificialIntelligence.ArtificialIntelligenceTestScript2@279fedbd]" name="verifyCourseDetailsNavigation" class="com.edureka.ArtificialIntelligence.ArtificialIntelligenceTestScript2"/>
+        <method signature="OnlineDoctorateTestScript1.compareDoctorateProgramDetails()[pri:0, instance:com.edureka.OnlineDoctorate.OnlineDoctorateTestScript1@43c1b556]" name="compareDoctorateProgramDetails" class="com.edureka.OnlineDoctorate.OnlineDoctorateTestScript1"/>
+        <method signature="OnlineDoctorateTestScript1.verifyApplyNowNavigation()[pri:0, instance:com.edureka.OnlineDoctorate.OnlineDoctorateTestScript1@43c1b556]" name="verifyApplyNowNavigation" class="com.edureka.OnlineDoctorate.OnlineDoctorateTestScript1"/>
+        <method signature="OnlineDoctorateTestScript1.verifyDoctorateLandingPageLoads()[pri:0, instance:com.edureka.OnlineDoctorate.OnlineDoctorateTestScript1@43c1b556]" name="verifyDoctorateLandingPageLoads" class="com.edureka.OnlineDoctorate.OnlineDoctorateTestScript1"/>
+        <method signature="LoginTestScript1.verifyLoginWithValidCredentials()[pri:0, instance:com.edureka.login.LoginTestScript1@7dcf94f8]" name="verifyLoginWithValidCredentials" class="com.edureka.login.LoginTestScript1"/>
+        <method signature="LoginTestScript1.verifyPasswordFieldIsAvailable()[pri:0, instance:com.edureka.login.LoginTestScript1@7dcf94f8]" name="verifyPasswordFieldIsAvailable" class="com.edureka.login.LoginTestScript1"/>
+      </group> <!-- functional -->
+      <group name="smoke">
+        <method signature="OnlineDoctorateTestScript1.verifyDoctorateLandingPageLoads()[pri:0, instance:com.edureka.OnlineDoctorate.OnlineDoctorateTestScript1@43c1b556]" name="verifyDoctorateLandingPageLoads" class="com.edureka.OnlineDoctorate.OnlineDoctorateTestScript1"/>
+      </group> <!-- smoke -->
+      <group name="integration">
+        <method signature="OnlineDoctorateTestScript1.compareDoctorateProgramDetails()[pri:0, instance:com.edureka.OnlineDoctorate.OnlineDoctorateTestScript1@43c1b556]" name="compareDoctorateProgramDetails" class="com.edureka.OnlineDoctorate.OnlineDoctorateTestScript1"/>
+        <method signature="OnlineDoctorateTestScript1.verifyApplyNowNavigation()[pri:0, instance:com.edureka.OnlineDoctorate.OnlineDoctorateTestScript1@43c1b556]" name="verifyApplyNowNavigation" class="com.edureka.OnlineDoctorate.OnlineDoctorateTestScript1"/>
+      </group> <!-- integration -->
+    </groups>
+    <test started-at="2026-10-20T11:43:02 IST" name="Functional Tests" finished-at="2026-10-20T11:45:38 IST" duration-ms="156361">
+      <class name="com.edureka.OnlineDoctorate.OnlineDoctorateTestScript1">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.edureka.OnlineDoctorate.OnlineDoctorateTestScript1@43c1b556]" started-at="2026-10-20T11:43:50 IST" name="setUp" finished-at="2026-10-20T11:43:54 IST" duration-ms="3937" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Browser started: chrome | URL: https://www.edureka.co/]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="compareDoctorateProgramDetails()[pri:0, instance:com.edureka.OnlineDoctorate.OnlineDoctorateTestScript1@43c1b556]" started-at="2026-10-20T11:43:54 IST" name="compareDoctorateProgramDetails" finished-at="2026-10-20T11:44:19 IST" duration-ms="24644" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[TC_ODP_004: Two program details pages inspected and compared]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- compareDoctorateProgramDetails -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.edureka.OnlineDoctorate.OnlineDoctorateTestScript1@43c1b556]" started-at="2026-10-20T11:44:19 IST" name="tearDown" finished-at="2026-10-20T11:44:19 IST" duration-ms="573" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.edureka.OnlineDoctorate.OnlineDoctorateTestScript1@43c1b556]" started-at="2026-10-20T11:44:19 IST" name="setUp" finished-at="2026-10-20T11:44:24 IST" duration-ms="4803" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Browser started: chrome | URL: https://www.edureka.co/]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyApplyNowNavigation()[pri:0, instance:com.edureka.OnlineDoctorate.OnlineDoctorateTestScript1@43c1b556]" started-at="2026-10-20T11:44:24 IST" name="verifyApplyNowNavigation" finished-at="2026-10-20T11:45:05 IST" duration-ms="41141" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[TC_ODP_006 PASSED: Apply Now destination or form detected]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyApplyNowNavigation -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.edureka.OnlineDoctorate.OnlineDoctorateTestScript1@43c1b556]" started-at="2026-10-20T11:45:05 IST" name="tearDown" finished-at="2026-10-20T11:45:07 IST" duration-ms="2228" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.edureka.OnlineDoctorate.OnlineDoctorateTestScript1@43c1b556]" started-at="2026-10-20T11:45:07 IST" name="setUp" finished-at="2026-10-20T11:45:17 IST" duration-ms="9083" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Browser started: chrome | URL: https://www.edureka.co/]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyDoctorateLandingPageLoads()[pri:0, instance:com.edureka.OnlineDoctorate.OnlineDoctorateTestScript1@43c1b556]" started-at="2026-10-20T11:45:17 IST" name="verifyDoctorateLandingPageLoads" finished-at="2026-10-20T11:45:32 IST" duration-ms="15477" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[TC_ODP_001 PASSED: Landing heading and program links verified]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyDoctorateLandingPageLoads -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.edureka.OnlineDoctorate.OnlineDoctorateTestScript1@43c1b556]" started-at="2026-10-20T11:45:32 IST" name="tearDown" finished-at="2026-10-20T11:45:32 IST" duration-ms="469" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.edureka.OnlineDoctorate.OnlineDoctorateTestScript1 -->
+      <class name="com.edureka.ArtificialIntelligence.ArtificialIntelligenceTestScript1">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.edureka.ArtificialIntelligence.ArtificialIntelligenceTestScript1@752325ad]" started-at="2026-10-20T11:43:30 IST" name="setUp" finished-at="2026-10-20T11:43:32 IST" duration-ms="2227" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Browser started: chrome | URL: https://www.edureka.co/]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyAiCourseHeadings()[pri:0, instance:com.edureka.ArtificialIntelligence.ArtificialIntelligenceTestScript1@752325ad]" started-at="2026-10-20T11:43:32 IST" name="verifyAiCourseHeadings" finished-at="2026-10-20T11:43:34 IST" duration-ms="1962" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Starting TC_AI_02]]>
+            </line>
+            <line>
+              <![CDATA[Passed: AI headings displayed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyAiCourseHeadings -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.edureka.ArtificialIntelligence.ArtificialIntelligenceTestScript1@752325ad]" started-at="2026-10-20T11:43:34 IST" name="tearDown" finished-at="2026-10-20T11:43:35 IST" duration-ms="354" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.edureka.ArtificialIntelligence.ArtificialIntelligenceTestScript1@752325ad]" started-at="2026-10-20T11:43:35 IST" name="setUp" finished-at="2026-10-20T11:43:49 IST" duration-ms="14272" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Browser started: chrome | URL: https://www.edureka.co/]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyAiCourseOverview()[pri:0, instance:com.edureka.ArtificialIntelligence.ArtificialIntelligenceTestScript1@752325ad]" started-at="2026-10-20T11:43:49 IST" name="verifyAiCourseOverview" finished-at="2026-10-20T11:43:50 IST" duration-ms="691" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Starting TC_AI_04]]>
+            </line>
+            <line>
+              <![CDATA[Page opened; verify course overview text separately]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyAiCourseOverview -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.edureka.ArtificialIntelligence.ArtificialIntelligenceTestScript1@752325ad]" started-at="2026-10-20T11:43:50 IST" name="tearDown" finished-at="2026-10-20T11:43:50 IST" duration-ms="369" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.edureka.ArtificialIntelligence.ArtificialIntelligenceTestScript1 -->
+      <class name="com.edureka.ArtificialIntelligence.ArtificialIntelligenceTestScript2">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.edureka.ArtificialIntelligence.ArtificialIntelligenceTestScript2@279fedbd]" started-at="2026-10-20T11:45:32 IST" name="setUp" finished-at="2026-10-20T11:45:35 IST" duration-ms="2341" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Browser started: chrome | URL: https://www.edureka.co/]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyCourseDetailsNavigation()[pri:0, instance:com.edureka.ArtificialIntelligence.ArtificialIntelligenceTestScript2@279fedbd]" started-at="2026-10-20T11:45:35 IST" name="verifyCourseDetailsNavigation" finished-at="2026-10-20T11:45:38 IST" duration-ms="3071" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[TC_AI_04 PASSED: Course details navigation verified.]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyCourseDetailsNavigation -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.edureka.ArtificialIntelligence.ArtificialIntelligenceTestScript2@279fedbd]" started-at="2026-10-20T11:45:38 IST" name="tearDown" finished-at="2026-10-20T11:45:38 IST" duration-ms="376" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.edureka.ArtificialIntelligence.ArtificialIntelligenceTestScript2 -->
+      <class name="com.edureka.login.LoginTestScript1">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.edureka.login.LoginTestScript1@7dcf94f8]" started-at="2026-10-20T11:43:02 IST" name="setUp" finished-at="2026-10-20T11:43:23 IST" duration-ms="21326" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Browser started: chrome | URL: https://www.edureka.co/]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyLoginWithValidCredentials()[pri:0, instance:com.edureka.login.LoginTestScript1@7dcf94f8]" started-at="2026-10-20T11:43:23 IST" name="verifyLoginWithValidCredentials" finished-at="2026-10-20T11:43:26 IST" duration-ms="2593" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Starting TC_LOGIN_02]]>
+            </line>
+            <line>
+              <![CDATA[Login action completed; verify the authenticated state]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyLoginWithValidCredentials -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.edureka.login.LoginTestScript1@7dcf94f8]" started-at="2026-10-20T11:43:26 IST" name="tearDown" finished-at="2026-10-20T11:43:26 IST" duration-ms="362" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.edureka.login.LoginTestScript1@7dcf94f8]" started-at="2026-10-20T11:43:26 IST" name="setUp" finished-at="2026-10-20T11:43:29 IST" duration-ms="2316" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Browser started: chrome | URL: https://www.edureka.co/]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyPasswordFieldIsAvailable()[pri:0, instance:com.edureka.login.LoginTestScript1@7dcf94f8]" started-at="2026-10-20T11:43:29 IST" name="verifyPasswordFieldIsAvailable" finished-at="2026-10-20T11:43:30 IST" duration-ms="1212" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Starting TC_LOGIN_08]]>
+            </line>
+            <line>
+              <![CDATA[Passed: Password field is visible]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyPasswordFieldIsAvailable -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.edureka.login.LoginTestScript1@7dcf94f8]" started-at="2026-10-20T11:43:30 IST" name="tearDown" finished-at="2026-10-20T11:43:30 IST" duration-ms="363" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.edureka.login.LoginTestScript1 -->
+    </test> <!-- Functional Tests -->
+  </suite> <!-- Edureka Functional Suite -->
+</testng-results>

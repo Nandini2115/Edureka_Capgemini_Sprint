@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Edureka Parallel Suite"
+       parallel="classes"
+       thread-count="4">
+
+    <test name="Parallel Module Tests">
+        <classes>
+            <class name="com.edureka.login.LoginTestScript1"/>
+            <class name="com.edureka.AllCourses.AllCoursesTestScript1"/>
+            <class name="com.edureka.ArtificialIntelligence.ArtificialIntelligenceTestScript1"/>
+            <class name="com.edureka.OnlineDoctorate.OnlineDoctorateTestScript1"/>
+        </classes>
+    </test>
+</suite>

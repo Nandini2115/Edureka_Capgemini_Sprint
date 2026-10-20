@@ -1,0 +1,131 @@
+
+package objRepo;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+public class LoginPage {
+
+    private final WebDriver driver;
+    private final WebDriverWait wait;
+
+    private final By loginDialog = By.xpath(
+        "//div[@role='dialog' and @aria-modal='true']"
+    );
+
+    private final By loginEntry = By.xpath(
+        "//*[self::a or self::button]"
+        + "[normalize-space(translate(.,"
+        + "'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'))='log in'"
+        + " or normalize-space(translate(.,"
+        + "'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'))='login']"
+    );
+
+    // Prefer fields inside the login popup.
+    private final By emailField = By.cssSelector(
+        "[role='dialog'] input[type='email'], "
+        + "[role='dialog'] input[name='email'], "
+        + "[role='dialog'] input[type='text']"
+    );
+
+    private final By passwordField = By.cssSelector(
+        "[role='dialog'] input[type='password']"
+    );
+
+    // Find the submit button inside the popup, not the header.
+    private final By submitButton = By.xpath(
+        "//div[@role='dialog']//button["
+        + "contains(translate(normalize-space(.),"
+        + "'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),"
+        + "'log in') or "
+        + "contains(translate(normalize-space(.),"
+        + "'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),"
+        + "'login')]"
+    );
+
+    public LoginPage(WebDriver driver, WebDriverWait wait) {
+        this.driver = driver;
+        this.wait = wait;
+        PageFactory.initElements(driver, this);
+    }
+
+    public void openLoginPopup() {
+
+        // Do not click the header button if the popup is already open.
+        if (isLoginPopupVisible()) {
+            return;
+        }
+
+        wait.until(
+            ExpectedConditions.elementToBeClickable(loginEntry)
+        ).click();
+
+        wait.until(
+            ExpectedConditions.visibilityOfElementLocated(loginDialog)
+        );
+
+        wait.until(
+            ExpectedConditions.visibilityOfElementLocated(emailField)
+        );
+    }
+
+    public boolean isLoginPopupVisible() {
+        for (WebElement dialog : driver.findElements(loginDialog)) {
+            if (dialog.isDisplayed()) {
+                return true;
+            }
+        }
+
+        // Fallback in case the site does not expose the dialog
+        // with the expected role.
+        for (WebElement field : driver.findElements(emailField)) {
+            if (field.isDisplayed()) {
+                return true;
+            }
+        }
+
+        return false;
+    }
+
+    public void enterEmail(String email) {
+        WebElement field = wait.until(
+            ExpectedConditions.visibilityOfElementLocated(emailField)
+        );
+
+        field.clear();
+        field.sendKeys(email);
+    }
+
+    public void enterPassword(String password) {
+        WebElement field = wait.until(
+            ExpectedConditions.visibilityOfElementLocated(passwordField)
+        );
+
+        field.clear();
+        field.sendKeys(password);
+    }
+
+    public void clickLogin() {
+        wait.until(
+            ExpectedConditions.elementToBeClickable(submitButton)
+        ).click();
+    }
+
+    public boolean isPasswordFieldVisible() {
+        return wait.until(
+            ExpectedConditions.visibilityOfElementLocated(passwordField)
+        ).isDisplayed();
+    }
+
+    public String getCurrentUrl() {
+        return driver.getCurrentUrl();
+    }
+
+    public String getPageTitle() {
+        return driver.getTitle();
+    }
+}
