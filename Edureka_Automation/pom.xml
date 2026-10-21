@@ -153,12 +153,6 @@
             </properties>
         </profile>
 
-        <profile>
-            <id>GS</id>
-            <properties>
-                <suiteXmlFile>Group.xml</suiteXmlFile>
-            </properties>
-        </profile>
 
     </profiles>
 

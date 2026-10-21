@@ -5,6 +5,7 @@
     <classes>
       <class name="com.edureka.ArtificialIntelligence.ArtificialIntelligenceTestScript2">
         <methods>
+          <include name="verifyCourseDetailsNavigation"/>
           <include name="verifyRequiredFieldValidation"/>
           <include name="tearDown"/>
           <include name="setUp"/>

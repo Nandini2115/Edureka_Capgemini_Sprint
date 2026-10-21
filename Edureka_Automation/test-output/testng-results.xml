@@ -1,225 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="12" total="20" passed="8" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="0" failed="2" skipped="0">
   <reporter-output>
     <line>
-      <![CDATA[Browser started: chrome | URL: https://www.edureka.co/]]>
+      <![CDATA[Browser started: chrome]]>
     </line>
     <line>
-      <![CDATA[Starting TC_LOGIN_02]]>
-    </line>
-    <line>
-      <![CDATA[Login action completed; verify the authenticated state]]>
-    </line>
-    <line>
-      <![CDATA[Browser started: chrome | URL: https://www.edureka.co/]]>
-    </line>
-    <line>
-      <![CDATA[Starting TC_LOGIN_08]]>
-    </line>
-    <line>
-      <![CDATA[Passed: Password field is visible]]>
-    </line>
-    <line>
-      <![CDATA[Browser started: chrome | URL: https://www.edureka.co/]]>
-    </line>
-    <line>
-      <![CDATA[Starting TC_AI_02]]>
-    </line>
-    <line>
-      <![CDATA[Passed: AI headings displayed]]>
-    </line>
-    <line>
-      <![CDATA[Browser started: chrome | URL: https://www.edureka.co/]]>
-    </line>
-    <line>
-      <![CDATA[Starting TC_AI_04]]>
-    </line>
-    <line>
-      <![CDATA[Page opened; verify course overview text separately]]>
-    </line>
-    <line>
-      <![CDATA[Browser started: chrome | URL: https://www.edureka.co/]]>
-    </line>
-    <line>
-      <![CDATA[TC_ODP_004: Two program details pages inspected and compared]]>
-    </line>
-    <line>
-      <![CDATA[Browser started: chrome | URL: https://www.edureka.co/]]>
-    </line>
-    <line>
-      <![CDATA[TC_ODP_006 PASSED: Apply Now destination or form detected]]>
-    </line>
-    <line>
-      <![CDATA[Browser started: chrome | URL: https://www.edureka.co/]]>
-    </line>
-    <line>
-      <![CDATA[TC_ODP_001 PASSED: Landing heading and program links verified]]>
-    </line>
-    <line>
-      <![CDATA[Browser started: chrome | URL: https://www.edureka.co/]]>
-    </line>
-    <line>
-      <![CDATA[TC_AI_04 PASSED: Course details navigation verified.]]>
+      <![CDATA[Browser started: chrome]]>
     </line>
   </reporter-output>
-  <suite started-at="2026-10-20T11:43:02 IST" name="Edureka Functional Suite" finished-at="2026-10-20T11:45:38 IST" duration-ms="156361">
+  <suite started-at="2026-10-21T10:51:49 IST" name="Default suite" finished-at="2026-10-21T10:51:59 IST" duration-ms="9775">
     <groups>
+      <group name="negative">
+        <method signature="ArtificialIntelligenceTestScript2.verifyRequiredFieldValidation()[pri:0, instance:com.edureka.ArtificialIntelligence.ArtificialIntelligenceTestScript2@618b19ad]" name="verifyRequiredFieldValidation" class="com.edureka.ArtificialIntelligence.ArtificialIntelligenceTestScript2"/>
+      </group> <!-- negative -->
       <group name="functional">
-        <method signature="ArtificialIntelligenceTestScript1.verifyAiCourseHeadings()[pri:0, instance:com.edureka.ArtificialIntelligence.ArtificialIntelligenceTestScript1@752325ad]" name="verifyAiCourseHeadings" class="com.edureka.ArtificialIntelligence.ArtificialIntelligenceTestScript1"/>
-        <method signature="ArtificialIntelligenceTestScript1.verifyAiCourseOverview()[pri:0, instance:com.edureka.ArtificialIntelligence.ArtificialIntelligenceTestScript1@752325ad]" name="verifyAiCourseOverview" class="com.edureka.ArtificialIntelligence.ArtificialIntelligenceTestScript1"/>
-        <method signature="ArtificialIntelligenceTestScript2.verifyCourseDetailsNavigation()[pri:0, instance:com.edureka.ArtificialIntelligence.ArtificialIntelligenceTestScript2@279fedbd]" name="verifyCourseDetailsNavigation" class="com.edureka.ArtificialIntelligence.ArtificialIntelligenceTestScript2"/>
-        <method signature="OnlineDoctorateTestScript1.compareDoctorateProgramDetails()[pri:0, instance:com.edureka.OnlineDoctorate.OnlineDoctorateTestScript1@43c1b556]" name="compareDoctorateProgramDetails" class="com.edureka.OnlineDoctorate.OnlineDoctorateTestScript1"/>
-        <method signature="OnlineDoctorateTestScript1.verifyApplyNowNavigation()[pri:0, instance:com.edureka.OnlineDoctorate.OnlineDoctorateTestScript1@43c1b556]" name="verifyApplyNowNavigation" class="com.edureka.OnlineDoctorate.OnlineDoctorateTestScript1"/>
-        <method signature="OnlineDoctorateTestScript1.verifyDoctorateLandingPageLoads()[pri:0, instance:com.edureka.OnlineDoctorate.OnlineDoctorateTestScript1@43c1b556]" name="verifyDoctorateLandingPageLoads" class="com.edureka.OnlineDoctorate.OnlineDoctorateTestScript1"/>
-        <method signature="LoginTestScript1.verifyLoginWithValidCredentials()[pri:0, instance:com.edureka.login.LoginTestScript1@7dcf94f8]" name="verifyLoginWithValidCredentials" class="com.edureka.login.LoginTestScript1"/>
-        <method signature="LoginTestScript1.verifyPasswordFieldIsAvailable()[pri:0, instance:com.edureka.login.LoginTestScript1@7dcf94f8]" name="verifyPasswordFieldIsAvailable" class="com.edureka.login.LoginTestScript1"/>
+        <method signature="ArtificialIntelligenceTestScript2.verifyCourseDetailsNavigation()[pri:0, instance:com.edureka.ArtificialIntelligence.ArtificialIntelligenceTestScript2@618b19ad]" name="verifyCourseDetailsNavigation" class="com.edureka.ArtificialIntelligence.ArtificialIntelligenceTestScript2"/>
       </group> <!-- functional -->
-      <group name="smoke">
-        <method signature="OnlineDoctorateTestScript1.verifyDoctorateLandingPageLoads()[pri:0, instance:com.edureka.OnlineDoctorate.OnlineDoctorateTestScript1@43c1b556]" name="verifyDoctorateLandingPageLoads" class="com.edureka.OnlineDoctorate.OnlineDoctorateTestScript1"/>
-      </group> <!-- smoke -->
-      <group name="integration">
-        <method signature="OnlineDoctorateTestScript1.compareDoctorateProgramDetails()[pri:0, instance:com.edureka.OnlineDoctorate.OnlineDoctorateTestScript1@43c1b556]" name="compareDoctorateProgramDetails" class="com.edureka.OnlineDoctorate.OnlineDoctorateTestScript1"/>
-        <method signature="OnlineDoctorateTestScript1.verifyApplyNowNavigation()[pri:0, instance:com.edureka.OnlineDoctorate.OnlineDoctorateTestScript1@43c1b556]" name="verifyApplyNowNavigation" class="com.edureka.OnlineDoctorate.OnlineDoctorateTestScript1"/>
-      </group> <!-- integration -->
     </groups>
-    <test started-at="2026-10-20T11:43:02 IST" name="Functional Tests" finished-at="2026-10-20T11:45:38 IST" duration-ms="156361">
-      <class name="com.edureka.OnlineDoctorate.OnlineDoctorateTestScript1">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.edureka.OnlineDoctorate.OnlineDoctorateTestScript1@43c1b556]" started-at="2026-10-20T11:43:50 IST" name="setUp" finished-at="2026-10-20T11:43:54 IST" duration-ms="3937" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[Browser started: chrome | URL: https://www.edureka.co/]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="compareDoctorateProgramDetails()[pri:0, instance:com.edureka.OnlineDoctorate.OnlineDoctorateTestScript1@43c1b556]" started-at="2026-10-20T11:43:54 IST" name="compareDoctorateProgramDetails" finished-at="2026-10-20T11:44:19 IST" duration-ms="24644" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[TC_ODP_004: Two program details pages inspected and compared]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- compareDoctorateProgramDetails -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.edureka.OnlineDoctorate.OnlineDoctorateTestScript1@43c1b556]" started-at="2026-10-20T11:44:19 IST" name="tearDown" finished-at="2026-10-20T11:44:19 IST" duration-ms="573" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.edureka.OnlineDoctorate.OnlineDoctorateTestScript1@43c1b556]" started-at="2026-10-20T11:44:19 IST" name="setUp" finished-at="2026-10-20T11:44:24 IST" duration-ms="4803" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[Browser started: chrome | URL: https://www.edureka.co/]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="verifyApplyNowNavigation()[pri:0, instance:com.edureka.OnlineDoctorate.OnlineDoctorateTestScript1@43c1b556]" started-at="2026-10-20T11:44:24 IST" name="verifyApplyNowNavigation" finished-at="2026-10-20T11:45:05 IST" duration-ms="41141" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[TC_ODP_006 PASSED: Apply Now destination or form detected]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- verifyApplyNowNavigation -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.edureka.OnlineDoctorate.OnlineDoctorateTestScript1@43c1b556]" started-at="2026-10-20T11:45:05 IST" name="tearDown" finished-at="2026-10-20T11:45:07 IST" duration-ms="2228" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.edureka.OnlineDoctorate.OnlineDoctorateTestScript1@43c1b556]" started-at="2026-10-20T11:45:07 IST" name="setUp" finished-at="2026-10-20T11:45:17 IST" duration-ms="9083" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[Browser started: chrome | URL: https://www.edureka.co/]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="verifyDoctorateLandingPageLoads()[pri:0, instance:com.edureka.OnlineDoctorate.OnlineDoctorateTestScript1@43c1b556]" started-at="2026-10-20T11:45:17 IST" name="verifyDoctorateLandingPageLoads" finished-at="2026-10-20T11:45:32 IST" duration-ms="15477" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[TC_ODP_001 PASSED: Landing heading and program links verified]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- verifyDoctorateLandingPageLoads -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.edureka.OnlineDoctorate.OnlineDoctorateTestScript1@43c1b556]" started-at="2026-10-20T11:45:32 IST" name="tearDown" finished-at="2026-10-20T11:45:32 IST" duration-ms="469" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.edureka.OnlineDoctorate.OnlineDoctorateTestScript1 -->
-      <class name="com.edureka.ArtificialIntelligence.ArtificialIntelligenceTestScript1">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.edureka.ArtificialIntelligence.ArtificialIntelligenceTestScript1@752325ad]" started-at="2026-10-20T11:43:30 IST" name="setUp" finished-at="2026-10-20T11:43:32 IST" duration-ms="2227" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[Browser started: chrome | URL: https://www.edureka.co/]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="verifyAiCourseHeadings()[pri:0, instance:com.edureka.ArtificialIntelligence.ArtificialIntelligenceTestScript1@752325ad]" started-at="2026-10-20T11:43:32 IST" name="verifyAiCourseHeadings" finished-at="2026-10-20T11:43:34 IST" duration-ms="1962" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[Starting TC_AI_02]]>
-            </line>
-            <line>
-              <![CDATA[Passed: AI headings displayed]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- verifyAiCourseHeadings -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.edureka.ArtificialIntelligence.ArtificialIntelligenceTestScript1@752325ad]" started-at="2026-10-20T11:43:34 IST" name="tearDown" finished-at="2026-10-20T11:43:35 IST" duration-ms="354" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.edureka.ArtificialIntelligence.ArtificialIntelligenceTestScript1@752325ad]" started-at="2026-10-20T11:43:35 IST" name="setUp" finished-at="2026-10-20T11:43:49 IST" duration-ms="14272" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[Browser started: chrome | URL: https://www.edureka.co/]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="verifyAiCourseOverview()[pri:0, instance:com.edureka.ArtificialIntelligence.ArtificialIntelligenceTestScript1@752325ad]" started-at="2026-10-20T11:43:49 IST" name="verifyAiCourseOverview" finished-at="2026-10-20T11:43:50 IST" duration-ms="691" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[Starting TC_AI_04]]>
-            </line>
-            <line>
-              <![CDATA[Page opened; verify course overview text separately]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- verifyAiCourseOverview -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.edureka.ArtificialIntelligence.ArtificialIntelligenceTestScript1@752325ad]" started-at="2026-10-20T11:43:50 IST" name="tearDown" finished-at="2026-10-20T11:43:50 IST" duration-ms="369" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.edureka.ArtificialIntelligence.ArtificialIntelligenceTestScript1 -->
+    <test started-at="2026-10-21T10:51:49 IST" name="Default test" finished-at="2026-10-21T10:51:59 IST" duration-ms="9775">
       <class name="com.edureka.ArtificialIntelligence.ArtificialIntelligenceTestScript2">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.edureka.ArtificialIntelligence.ArtificialIntelligenceTestScript2@279fedbd]" started-at="2026-10-20T11:45:32 IST" name="setUp" finished-at="2026-10-20T11:45:35 IST" duration-ms="2341" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.edureka.ArtificialIntelligence.ArtificialIntelligenceTestScript2@618b19ad]" started-at="2026-10-21T10:51:49 IST" name="setUp" finished-at="2026-10-21T10:51:52 IST" duration-ms="2674" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -229,80 +29,175 @@
           </params>
           <reporter-output>
             <line>
-              <![CDATA[Browser started: chrome | URL: https://www.edureka.co/]]>
+              <![CDATA[Browser started: chrome]]>
             </line>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyCourseDetailsNavigation()[pri:0, instance:com.edureka.ArtificialIntelligence.ArtificialIntelligenceTestScript2@279fedbd]" started-at="2026-10-20T11:45:35 IST" name="verifyCourseDetailsNavigation" finished-at="2026-10-20T11:45:38 IST" duration-ms="3071" status="PASS">
+        <test-method signature="verifyCourseDetailsNavigation()[pri:0, instance:com.edureka.ArtificialIntelligence.ArtificialIntelligenceTestScript2@618b19ad]" started-at="2026-10-21T10:51:52 IST" name="verifyCourseDetailsNavigation" finished-at="2026-10-21T10:51:54 IST" duration-ms="2411" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchSessionException">
+            <message>
+              <![CDATA[invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=155.0.8059.85)
+Build info: version: '4.46.0', revision: 'df5a634 df5a6341cbb5f8f06b836bd595752775627c80dc'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.12.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5086df03589a2aa72639ce81c2a6e0d4, findElement {using=css selector, value=a[href*='/executive-programs/pgp-generative-ai-machine-learning-certification-training']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 155.0.8059.85, chrome: {chromedriverVersion: 155.0.8059.84 (5869fe313571..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:38979}, goog:processID: 376, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:38979/devtoo..., se:cdpVersion: 155.0.8059.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5086df03589a2aa72639ce81c2a6e0d4]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchSessionException: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=155.0.8059.85)
+Build info: version: '4.46.0', revision: 'df5a634 df5a6341cbb5f8f06b836bd595752775627c80dc'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.12.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5086df03589a2aa72639ce81c2a6e0d4, findElement {using=css selector, value=a[href*='/executive-programs/pgp-generative-ai-machine-learning-certification-training']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 155.0.8059.85, chrome: {chromedriverVersion: 155.0.8059.84 (5869fe313571..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:38979}, goog:processID: 376, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:38979/devtoo..., se:cdpVersion: 155.0.8059.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5086df03589a2aa72639ce81c2a6e0d4
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:143)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:217)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:626)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:173)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:406)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:400)
+at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:756)
+at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:749)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:210)
+at objRepo.ArtificialIntelligencePage.openCourseByTitle(ArtificialIntelligencePage.java:148)
+at com.edureka.ArtificialIntelligence.ArtificialIntelligenceTestScript2.verifyCourseDetailsNavigation(ArtificialIntelligenceTestScript2.java:24)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
           <reporter-output>
-            <line>
-              <![CDATA[TC_AI_04 PASSED: Course details navigation verified.]]>
-            </line>
           </reporter-output>
         </test-method> <!-- verifyCourseDetailsNavigation -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.edureka.ArtificialIntelligence.ArtificialIntelligenceTestScript2@279fedbd]" started-at="2026-10-20T11:45:38 IST" name="tearDown" finished-at="2026-10-20T11:45:38 IST" duration-ms="376" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.edureka.ArtificialIntelligence.ArtificialIntelligenceTestScript2@618b19ad]" started-at="2026-10-21T10:51:54 IST" name="tearDown" finished-at="2026-10-21T10:51:54 IST" duration-ms="247" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.edureka.ArtificialIntelligence.ArtificialIntelligenceTestScript2@618b19ad]" started-at="2026-10-21T10:51:54 IST" name="setUp" finished-at="2026-10-21T10:51:56 IST" duration-ms="1902" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Browser started: chrome]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyRequiredFieldValidation()[pri:0, instance:com.edureka.ArtificialIntelligence.ArtificialIntelligenceTestScript2@618b19ad]" started-at="2026-10-21T10:51:56 IST" name="verifyRequiredFieldValidation" finished-at="2026-10-21T10:51:58 IST" duration-ms="2303" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchSessionException">
+            <message>
+              <![CDATA[invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=155.0.8059.85)
+Build info: version: '4.46.0', revision: 'df5a634 df5a6341cbb5f8f06b836bd595752775627c80dc'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.12.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [7abb31c30b43f794c1dc6996a38ae83f, findElement {using=css selector, value=a[href*='/executive-programs/pgp-generative-ai-machine-learning-certification-training']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 155.0.8059.85, chrome: {chromedriverVersion: 155.0.8059.84 (5869fe313571..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:27973}, goog:processID: 17808, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:27973/devtoo..., se:cdpVersion: 155.0.8059.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 7abb31c30b43f794c1dc6996a38ae83f]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchSessionException: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=155.0.8059.85)
+Build info: version: '4.46.0', revision: 'df5a634 df5a6341cbb5f8f06b836bd595752775627c80dc'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.12.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [7abb31c30b43f794c1dc6996a38ae83f, findElement {using=css selector, value=a[href*='/executive-programs/pgp-generative-ai-machine-learning-certification-training']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 155.0.8059.85, chrome: {chromedriverVersion: 155.0.8059.84 (5869fe313571..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:27973}, goog:processID: 17808, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:27973/devtoo..., se:cdpVersion: 155.0.8059.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 7abb31c30b43f794c1dc6996a38ae83f
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:143)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:217)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:626)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:173)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:406)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:400)
+at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:756)
+at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:749)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:210)
+at objRepo.ArtificialIntelligencePage.openCourseByTitle(ArtificialIntelligencePage.java:148)
+at com.edureka.ArtificialIntelligence.ArtificialIntelligenceTestScript2.verifyRequiredFieldValidation(ArtificialIntelligenceTestScript2.java:56)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyRequiredFieldValidation -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.edureka.ArtificialIntelligence.ArtificialIntelligenceTestScript2@618b19ad]" started-at="2026-10-21T10:51:58 IST" name="tearDown" finished-at="2026-10-21T10:51:59 IST" duration-ms="132" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.edureka.ArtificialIntelligence.ArtificialIntelligenceTestScript2 -->
-      <class name="com.edureka.login.LoginTestScript1">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.edureka.login.LoginTestScript1@7dcf94f8]" started-at="2026-10-20T11:43:02 IST" name="setUp" finished-at="2026-10-20T11:43:23 IST" duration-ms="21326" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[Browser started: chrome | URL: https://www.edureka.co/]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="verifyLoginWithValidCredentials()[pri:0, instance:com.edureka.login.LoginTestScript1@7dcf94f8]" started-at="2026-10-20T11:43:23 IST" name="verifyLoginWithValidCredentials" finished-at="2026-10-20T11:43:26 IST" duration-ms="2593" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[Starting TC_LOGIN_02]]>
-            </line>
-            <line>
-              <![CDATA[Login action completed; verify the authenticated state]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- verifyLoginWithValidCredentials -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.edureka.login.LoginTestScript1@7dcf94f8]" started-at="2026-10-20T11:43:26 IST" name="tearDown" finished-at="2026-10-20T11:43:26 IST" duration-ms="362" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.edureka.login.LoginTestScript1@7dcf94f8]" started-at="2026-10-20T11:43:26 IST" name="setUp" finished-at="2026-10-20T11:43:29 IST" duration-ms="2316" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[Browser started: chrome | URL: https://www.edureka.co/]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="verifyPasswordFieldIsAvailable()[pri:0, instance:com.edureka.login.LoginTestScript1@7dcf94f8]" started-at="2026-10-20T11:43:29 IST" name="verifyPasswordFieldIsAvailable" finished-at="2026-10-20T11:43:30 IST" duration-ms="1212" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[Starting TC_LOGIN_08]]>
-            </line>
-            <line>
-              <![CDATA[Passed: Password field is visible]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- verifyPasswordFieldIsAvailable -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.edureka.login.LoginTestScript1@7dcf94f8]" started-at="2026-10-20T11:43:30 IST" name="tearDown" finished-at="2026-10-20T11:43:30 IST" duration-ms="363" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.edureka.login.LoginTestScript1 -->
-    </test> <!-- Functional Tests -->
-  </suite> <!-- Edureka Functional Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

@@ -1,7 +1,5 @@
-
 package baseclass;
 
-import java.io.IOException;
 import java.io.InputStream;
 import java.time.Duration;
 import java.util.Properties;
@@ -23,159 +21,87 @@ public class BaseClass {
 
     protected WebDriver driver;
     protected WebDriverWait wait;
-    protected Properties prop;
+    protected Properties prop = new Properties();
 
-    // Load CommonData.properties
-    private void loadProperties() {
-        prop = new Properties();
-
-        try (InputStream input = getClass()
+    // Load properties
+    private void loadProperties() throws Exception {
+        InputStream input = getClass()
                 .getClassLoader()
-                .getResourceAsStream("CommonData.properties")) {
+                .getResourceAsStream("CommonData.properties");
 
-            if (input == null) {
-                throw new IllegalStateException(
-                    "CommonData.properties not found in src/test/resources.");
-            }
-
-            prop.load(input);
-
-        } catch (IOException e) {
+        if (input == null) {
             throw new RuntimeException(
-                "Unable to load CommonData.properties.", e);
+                    "CommonData.properties not found");
         }
+
+        prop.load(input);
+        input.close();
     }
 
-    // Read a property value
+    // Get property value
     protected String getProperty(String key) {
-        if (prop == null) {
-            loadProperties();
-        }
-
-        String value = prop.getProperty(key);
-
-        if (value == null) {
-            throw new IllegalArgumentException(
-                "Property not found in CommonData.properties: " + key);
-        }
-
-        return value.trim();
+        return prop.getProperty(key).trim();
     }
 
-    // Initialize browser before every test
+    // Browser setup
     @Parameters("browser")
     @BeforeMethod(alwaysRun = true)
-    public void setUp(@Optional("chrome") String browser) {
+    public void setUp(@Optional("chrome") String browser)
+            throws Exception {
 
         loadProperties();
 
-        if (browser == null || browser.trim().isEmpty()) {
-            browser = prop.getProperty("browser", "chrome");
+        System.out.println("===== BROWSER SETUP =====");
+        System.out.println("Browser: " + browser);
+
+        if (browser.equalsIgnoreCase("chrome")) {
+
+            ChromeOptions options = new ChromeOptions();
+            options.addArguments("--start-maximized");
+            options.addArguments("--disable-notifications");
+
+            driver = new ChromeDriver(options);
+
+        } else if (browser.equalsIgnoreCase("firefox")) {
+
+            FirefoxOptions options = new FirefoxOptions();
+            driver = new FirefoxDriver(options);
+            driver.manage().window().maximize();
+
+        } else {
+            throw new RuntimeException("Unsupported browser: " + browser);
         }
 
-        browser = browser.trim().toLowerCase();
+        driver.manage().timeouts()
+                .implicitlyWait(Duration.ZERO);
 
-        System.out.println("\n========== BROWSER SETUP ==========");
-        System.out.println("Selected browser: " + browser);
+        driver.manage().timeouts()
+                .pageLoadTimeout(Duration.ofSeconds(60));
 
-        try {
-            switch (browser) {
+        wait = new WebDriverWait(driver, Duration.ofSeconds(25));
 
-                case "chrome":
-                    ChromeOptions chromeOptions = new ChromeOptions();
-                    chromeOptions.addArguments("--start-maximized");
-                    chromeOptions.addArguments("--disable-notifications");
+        driver.get(getProperty("url"));
 
-                    driver = new ChromeDriver(chromeOptions);
-                    break;
+        System.out.println("URL: " + driver.getCurrentUrl());
+        System.out.println("Title: " + driver.getTitle());
+        System.out.println("Explicit wait: 25 seconds");
 
-                case "firefox":
-                    FirefoxOptions firefoxOptions = new FirefoxOptions();
-
-                    driver = new FirefoxDriver(firefoxOptions);
-                    driver.manage().window().maximize();
-                    break;
-
-                default:
-                    throw new IllegalArgumentException(
-                        "Unsupported browser: " + browser
-                        + ". Use chrome or firefox.");
-            }
-
-            int waitSeconds;
-
-            try {
-                waitSeconds = Integer.parseInt(
-                    prop.getProperty("explicitWait", "20").trim());
-            } catch (NumberFormatException e) {
-                waitSeconds = 20;
-            }
-
-            driver.manage().timeouts()
-                    .implicitlyWait(Duration.ZERO);
-
-            driver.manage().timeouts()
-                    .pageLoadTimeout(Duration.ofSeconds(60));
-
-            wait = new WebDriverWait(
-                    driver, Duration.ofSeconds(waitSeconds));
-
-            String url = getProperty("url");
-
-            System.out.println("Opening URL: " + url);
-            driver.get(url);
-
-            System.out.println("Browser started successfully.");
-            System.out.println("Current URL: " + driver.getCurrentUrl());
-            System.out.println("Page title: " + driver.getTitle());
-            System.out.println("Explicit wait: " + waitSeconds + " seconds");
-            System.out.println("===================================\n");
-
-            Reporter.log(
-                "Browser started: " + browser
-                + " | URL: " + driver.getCurrentUrl(), true);
-
-        } catch (RuntimeException e) {
-            if (driver != null) {
-                try {
-                    driver.quit();
-                } catch (Exception ignored) {
-                    // Preserve the original setup error.
-                }
-
-                driver = null;
-            }
-
-            throw e;
-        }
+        Reporter.log("Browser started: " + browser, true);
     }
 
-    // Pause for demonstration purposes
-    protected void pauseForDemo() {
-        try {
-            Thread.sleep(1000);
-        } catch (InterruptedException e) {
-            Thread.currentThread().interrupt();
-            throw new RuntimeException(
-                "Demo pause was interrupted.", e);
-        }
+    // Pause for demonstration
+    protected void pauseForDemo() throws InterruptedException {
+        Thread.sleep(1000);
     }
 
-    // Close browser after every test
+    // Close browser
     @AfterMethod(alwaysRun = true)
     public void tearDown() {
-
         if (driver != null) {
-            System.out.println(
-                "Closing browser after test: "
-                + driver.getClass().getSimpleName());
-
-            try {
-                driver.quit();
-            } finally {
-                driver = null;
-                wait = null;
-            }
+            driver.quit();
+            driver = null;
+            wait = null;
+            System.out.println("Browser closed.");
         }
     }
 }
