@@ -14,15 +14,10 @@ public class ArtificialIntelligenceTestScript1 extends BaseClass {
     public void verifyAiCategoryOpens() {
         Reporter.log("Starting TC_AI_01", true);
 
-        ArtificialIntelligencePage page =
-            new ArtificialIntelligencePage(driver, wait);
-
+        ArtificialIntelligencePage page = new ArtificialIntelligencePage(driver, wait);
         page.openAiCategory();
 
-        Assert.assertFalse(
-            page.getPageTitle().isBlank(),
-            "AI page should have a title");
-
+        Assert.assertFalse(page.getPageTitle().isBlank(),"AI page should have a title");
         Reporter.log("Passed: AI category opened", true);
     }
 
@@ -30,15 +25,10 @@ public class ArtificialIntelligenceTestScript1 extends BaseClass {
     public void verifyAiCourseHeadings() {
         Reporter.log("Starting TC_AI_02", true);
 
-        ArtificialIntelligencePage page =
-            new ArtificialIntelligencePage(driver, wait);
-
+        ArtificialIntelligencePage page = new ArtificialIntelligencePage(driver, wait);
         page.openAiCategory();
 
-        Assert.assertFalse(
-            page.getVisibleHeadings().isEmpty(),
-            "Visible headings should be present");
-
+        Assert.assertFalse(page.getVisibleHeadings().isEmpty(),"Visible headings should be present");
         Reporter.log("Passed: AI headings displayed", true);
     }
 
@@ -46,17 +36,9 @@ public class ArtificialIntelligenceTestScript1 extends BaseClass {
     public void verifyAiCourseOverview() {
         Reporter.log("Starting TC_AI_04", true);
 
-        ArtificialIntelligencePage page =
-            new ArtificialIntelligencePage(driver, wait);
-
+        ArtificialIntelligencePage page = new ArtificialIntelligencePage(driver, wait);
         page.openAiCategory();
-
-        Assert.assertFalse(
-            page.getPageTitle().isBlank(),
-            "Page title should be present");
-
-        Reporter.log(
-            "Page opened; verify course overview text separately",
-            true);
+        Assert.assertFalse(page.getPageTitle().isBlank(),"Page title should be present");
+        Reporter.log("Page opened; verify course overview text separately", true);
     }
 }

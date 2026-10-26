@@ -17,12 +17,8 @@ public class LoginTestScript1 extends BaseClass {
         LoginPage login = new LoginPage(driver, wait);
         login.openLoginPopup();
 
-        Assert.assertTrue(
-            login.isLoginPopupVisible(),
-            "Login popup should be visible");
-
-        Reporter.log(
-            "Passed: TC_LOGIN_01 - Login popup opened", true);
+        Assert.assertTrue(login.isLoginPopupVisible(),"Login popup should be visible");
+        Reporter.log("Passed: TC_LOGIN_01 - Login popup opened", true);
     }
 
     @Test(groups = {"functional"})
@@ -32,10 +28,8 @@ public class LoginTestScript1 extends BaseClass {
         String email = getProperty("validEmail");
         String password = getProperty("validPassword");
 
-        Assert.assertFalse(email.isBlank(),
-            "Set validEmail in CommonData.properties first");
-        Assert.assertFalse(password.isBlank(),
-            "Set validPassword in CommonData.properties first");
+        Assert.assertFalse(email.isBlank(),"Set validEmail in CommonData.properties first");
+        Assert.assertFalse(password.isBlank(),"Set validPassword in CommonData.properties first");
 
         LoginPage login = new LoginPage(driver, wait);
         login.openLoginPopup();
@@ -43,28 +37,16 @@ public class LoginTestScript1 extends BaseClass {
         login.enterPassword(password);
         login.clickLogin();
 
-        // Replace with a verified post-login assertion.
-        Assert.assertFalse(
-            login.getCurrentUrl().isBlank(),
-            "Browser URL should be available after login");
-
-        Reporter.log(
-            "Login action completed; verify the authenticated state",
-            true);
+        Assert.assertFalse(login.getCurrentUrl().isBlank(),"Browser URL should be available after login");
+        Reporter.log("Login action completed; verify the authenticated state",true);
     }
 
     @Test(groups = {"functional"})
     public void verifyPasswordFieldIsAvailable() {
         Reporter.log("Starting TC_LOGIN_08", true);
-
         LoginPage login = new LoginPage(driver, wait);
         login.openLoginPopup();
-
-        Assert.assertTrue(
-            login.isPasswordFieldVisible(),
-            "Password field should be visible");
-
-        Reporter.log(
-            "Passed: Password field is visible", true);
+        Assert.assertTrue(login.isPasswordFieldVisible(),"Password field should be visible");
+        Reporter.log("Passed: Password field is visible", true);
     }
 }
