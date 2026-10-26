@@ -21,21 +21,13 @@ public final class ReportUtility {
         try {
             Files.createDirectories(LOG_FILE.getParent());
 
-            String timestamp = LocalDateTime.now().format(
-                DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss"));
+            String timestamp = LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss"));
+            String line = timestamp + " | " + message + System.lineSeparator();
+            Files.write(LOG_FILE,line.getBytes(StandardCharsets.UTF_8), StandardOpenOption.CREATE, StandardOpenOption.APPEND);
 
-            String line = timestamp + " | " + message
-                    + System.lineSeparator();
-
-            Files.write(
-                LOG_FILE,
-                line.getBytes(StandardCharsets.UTF_8),
-                StandardOpenOption.CREATE,
-                StandardOpenOption.APPEND);
-
-        } catch (IOException e) {
-            System.err.println(
-                "Unable to write report log: " + e.getMessage());
+        } 
+        catch (IOException e) {
+            System.err.println("Unable to write report log: " + e.getMessage());
         }
     }
 }

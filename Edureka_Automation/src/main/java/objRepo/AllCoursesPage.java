@@ -15,17 +15,14 @@ public class AllCoursesPage {
     private WebDriver driver;
     private WebDriverWait wait;
 
-    private static final String ALL_COURSES_URL =
-            "https://www.edureka.co/all-courses";
+    private static final String ALL_COURSES_URL = "https://www.edureka.co/all-courses";
 
     // AI category XPath
-    private final By aiCategory = By.xpath(
-            "//a[contains(.,'Artificial Intelligence')] | " +
-            "//button[contains(.,'Artificial Intelligence')]");
+    
+    private final By aiCategory = By.xpath("//a[contains(.,'Artificial Intelligence')] | " + "//button[contains(.,'Artificial Intelligence')]");
 
     // Course headings
-    private final By courseHeadings =
-            By.cssSelector("h1, h2, h3, [class*='course-title']");
+    private final By courseHeadings = By.cssSelector("h1, h2, h3, [class*='course-title']");
 
     public AllCoursesPage(WebDriver driver) {
         this.driver = driver;
@@ -41,8 +38,7 @@ public class AllCoursesPage {
     public void openAllCourses() {
         System.out.println("Opening All Courses page");
 
-        driver.manage().timeouts()
-                .pageLoadTimeout(Duration.ofSeconds(120));
+        driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(120));
 
         driver.get(ALL_COURSES_URL);
 
@@ -59,8 +55,7 @@ public class AllCoursesPage {
 
     // Check whether the page is loaded
     public boolean isPageLoaded() {
-        return driver.getCurrentUrl().contains("/all-courses")
-                && !driver.getTitle().trim().isEmpty();
+        return driver.getCurrentUrl().contains("/all-courses") && !driver.getTitle().trim().isEmpty();
     }
 
     // Check whether AI category is visible
@@ -75,9 +70,7 @@ public class AllCoursesPage {
 
     // Click AI category
     public void selectAiCategory() {
-        WebElement element = wait.until(
-                ExpectedConditions.elementToBeClickable(aiCategory));
-
+        WebElement element = wait.until(ExpectedConditions.elementToBeClickable(aiCategory));
         element.click();
 
         System.out.println("AI category clicked");

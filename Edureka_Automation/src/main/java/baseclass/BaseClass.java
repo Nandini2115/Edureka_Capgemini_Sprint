@@ -72,11 +72,9 @@ public class BaseClass {
             throw new RuntimeException("Unsupported browser: " + browser);
         }
 
-        driver.manage().timeouts()
-                .implicitlyWait(Duration.ZERO);
+        driver.manage().timeouts().implicitlyWait(Duration.ZERO);
 
-        driver.manage().timeouts()
-                .pageLoadTimeout(Duration.ofSeconds(60));
+        driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(60));
 
         wait = new WebDriverWait(driver, Duration.ofSeconds(25));
 
@@ -90,11 +88,13 @@ public class BaseClass {
     }
 
     // Pause for demonstration
+    
     protected void pauseForDemo() throws InterruptedException {
         Thread.sleep(1000);
     }
 
     // Close browser
+    
     @AfterMethod(alwaysRun = true)
     public void tearDown() {
         if (driver != null) {

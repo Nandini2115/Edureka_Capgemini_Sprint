@@ -5,7 +5,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.ElementClickInterceptedException;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -15,47 +17,24 @@ public class ArtificialIntelligencePage {
 
     private final WebDriver driver;
     private final WebDriverWait wait;
-
-    public static final String AI_URL =
-            "https://www.edureka.co/artificial-intelligence-certification-courses";
-
-    public static final String COURSE_URL =
-            "https://www.edureka.co/executive-programs/pgp-generative-ai-machine-learning-certification-training";
-
-    public static final String COURSE_TITLE =
-            "Post Graduate Program in Generative AI and Agentic AI";
-
-    private final By headings =
-            By.cssSelector("h1, h2, h3");
-
-    private final By courseLink =
-            By.cssSelector("a[href*='/executive-programs/pgp-generative-ai-machine-learning-certification-training']");
-
-    private final By queryWidget =
-            By.xpath("//*[contains(.,'Drop us a Query')]");
-
-    private final By submitButton =
-            By.xpath("//button[contains(.,'SUBMIT QUERY')] | //input[@value='SUBMIT QUERY']");
+    public static final String AI_URL = "https://www.edureka.co/artificial-intelligence-certification-courses";
+    public static final String COURSE_URL = "https://www.edureka.co/executive-programs/pgp-generative-ai-machine-learning-certification-training";
+    public static final String COURSE_TITLE = "Post Graduate Program in Generative AI and Agentic AI";
 
     public ArtificialIntelligencePage(WebDriver driver) {
         this.driver = driver;
-        this.wait = new WebDriverWait(driver, Duration.ofSeconds(25));
+        this.wait = new WebDriverWait(driver, Duration.ofSeconds(20));
     }
-
     public ArtificialIntelligencePage(WebDriver driver, WebDriverWait wait) {
         this.driver = driver;
         this.wait = wait;
     }
 
-    // Open AI page
+    // AI page navigation
     public void openAIPage() {
-        System.out.println("Opening AI page");
-
+        System.out.println("Opening AI page: " + AI_URL);
         driver.get(AI_URL);
-
-        wait.until(ExpectedConditions.urlContains(
-                "artificial-intelligence-certification-courses"));
-
+        wait.until(ExpectedConditions.urlContains("artificial-intelligence-certification-courses"));
         System.out.println("AI page title: " + driver.getTitle());
         System.out.println("AI page URL: " + driver.getCurrentUrl());
     }
@@ -63,199 +42,237 @@ public class ArtificialIntelligencePage {
     public void open() {
         openAIPage();
     }
-
     public void openAiCategory() {
         openAIPage();
     }
-
     public String getPageTitle() {
         return driver.getTitle();
     }
-
     public String getCurrentUrl() {
         return driver.getCurrentUrl();
     }
-
     public String currentUrl() {
         return driver.getCurrentUrl();
     }
-
     public boolean isAiPageLoaded() {
-        return driver.getCurrentUrl().contains(
-                "artificial-intelligence-certification-courses")
-                && driver.getTitle().toLowerCase().contains(
-                        "artificial intelligence");
+        return driver.getCurrentUrl().contains("artificial-intelligence-certification-courses") && driver.getTitle().toLowerCase().contains("artificial intelligence");
     }
-
     public boolean pageLoaded() {
         return isAiPageLoaded();
     }
 
-    // Get visible headings
     public List<String> getVisibleHeadings() {
-        List<String> list = new ArrayList<>();
-
-        for (WebElement element : driver.findElements(headings)) {
-            if (element.isDisplayed()) {
-                String text = element.getText().trim();
-
-                if (!text.isEmpty()) {
-                    list.add(text);
+        List<String> headings = new ArrayList<>();
+        for (WebElement element : driver.findElements(By.cssSelector("h1, h2, h3"))) {
+            try {
+                if (element.isDisplayed()) {
+                    String text = element.getText().trim();
+                    if (!text.isEmpty()) {
+                        headings.add(text);
+                    }
                 }
+            } catch (StaleElementReferenceException ignored) {
             }
         }
 
-        return list;
+        return headings;
     }
 
     public boolean hasVisibleHeadings() {
         return !getVisibleHeadings().isEmpty();
     }
 
-    // Check course cards
     public boolean hasCourseCards() {
-        By cards = By.xpath(
-                "//a[contains(.,'View Program') or contains(.,'View Course Details')]"
-                + " | //button[contains(.,'View Program') or contains(.,'View Course Details')]");
-
+    	By cards = By.xpath("//div[@id='popular_courses']//button");
         for (WebElement element : driver.findElements(cards)) {
-            if (element.isDisplayed()) {
-                return true;
+            try {
+                if (element.isDisplayed()) {
+                    return true;
+                }
+            } catch (StaleElementReferenceException ignored) {
             }
         }
 
         return false;
     }
-
-    // Check whether a course is present
     public boolean containsCourse(String courseName) {
-        By course = By.xpath(
-                "//*[contains(.,'" + courseName + "')]");
-
+        String lower = courseName.toLowerCase();
+        By course = By.xpath("//*[contains(.,'" + courseName + "')]");
         for (WebElement element : driver.findElements(course)) {
-            if (element.isDisplayed()) {
-                return true;
+            try {
+                if (element.isDisplayed()) {
+                    return true;
+                }
+            } catch (StaleElementReferenceException ignored) {
+        
             }
         }
 
         return false;
     }
 
-    // Open course details
     public void openCourseByTitle(String courseTitle) {
-        System.out.println("Opening course: " + courseTitle);
+        System.out.println("Searching for course: " + courseTitle);
+        By courseText = By.xpath("//*[contains(.,'" + courseTitle + "')]");
+        wait.until(ExpectedConditions.presenceOfElementLocated(courseText));
 
-        WebElement link = wait.until(
-                ExpectedConditions.elementToBeClickable(courseLink));
+        String targetUrl = COURSE_URL;
 
-        link.click();
+        By courseLink = By.cssSelector("a[href*='/executive-programs/pgp-generative-ai-machine-learning-certification-training']");
+
+        for (WebElement link : driver.findElements(courseLink)) {
+            try {
+                String href = link.getAttribute("href");
+                if (link.isDisplayed() && href != null && !href.isBlank()) {
+                    targetUrl = href;
+                    break;
+                }
+            } catch (StaleElementReferenceException ignored) {
+                // Use the known course URL.
+            }
+        }
+
+        System.out.println("Course destination: " + targetUrl);
+        driver.navigate().to(targetUrl);
 
         wait.until(ExpectedConditions.urlContains("/executive-programs/"));
+        wait.until(d -> !d.getTitle().isBlank());
 
-        System.out.println("Course URL: " + driver.getCurrentUrl());
-        System.out.println("Course title: " + driver.getTitle());
+        System.out.println("Course details URL: " + driver.getCurrentUrl());
+        System.out.println("Course details title: " + driver.getTitle());
     }
 
-    // Check overview content
     public boolean hasOverviewText() {
         for (WebElement element : driver.findElements(
                 By.cssSelector("main, section, h1, h2, h3"))) {
-
-            if (element.isDisplayed()
-                    && !element.getText().trim().isEmpty()) {
-                return true;
+            try {
+                if (element.isDisplayed()
+                        && !element.getText().trim().isEmpty()) {
+                    return true;
+                }
+            } catch (StaleElementReferenceException ignored) {
+            
             }
         }
 
         return false;
     }
 
-    // Open enquiry widget
     public void openQueryWidget() {
-        System.out.println("Looking for enquiry widget");
+        System.out.println("Looking for Drop us a Query widget...");
+        By textLocator = By.xpath("//*[contains(.,'Drop us a Query')]");
+        WebElement widget = wait.until(d -> {
+            for (WebElement element : d.findElements(textLocator)) {
+                try {
+                    if (element.isDisplayed()) {
+                        return element;
+                    }
+                } catch (StaleElementReferenceException ignored) {
 
-        WebElement widget = wait.until(
-                ExpectedConditions.visibilityOfElementLocated(queryWidget));
+                }
+            }
+            return null;
+        });
 
-        ((JavascriptExecutor) driver).executeScript(
-                "arguments[0].scrollIntoView({block:'center'});", widget);
+        By bodyLocator = By.cssSelector("div[class*='duq_body']");
 
-        widget.click();
+        boolean bodyAlreadyOpen = driver.findElements(bodyLocator).stream().anyMatch(element -> {
+                try {
+                    return element.isDisplayed();
+                } catch (StaleElementReferenceException ignored) {
+                    return false;
+                }
+            });
 
-        System.out.println("Enquiry widget opened");
+        if (!bodyAlreadyOpen) {
+            ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView({block:'center'});", widget);
+
+            try {
+                widget.click();
+            } catch (ElementClickInterceptedException e) {
+                ((JavascriptExecutor) driver).executeScript("arguments[0].click();", widget);
+            }
+        }
+
+        System.out.println("Enquiry widget is ready.");
     }
 
     public void openQueryWidgetIfNeeded() {
         openQueryWidget();
     }
 
-    // Submit empty enquiry form
     public void submitEmptyEnquiryForm() {
-        WebElement button = wait.until(
-                ExpectedConditions.elementToBeClickable(submitButton));
+    	By submitLocator = By.xpath("//button[normalize-space()='SUBMIT QUERY']");
 
-        ((JavascriptExecutor) driver).executeScript(
-                "arguments[0].scrollIntoView({block:'center'});", button);
+        WebElement button = wait.until(d -> {
+            for (WebElement element : d.findElements(submitLocator)) {
+                try {
+                    if (element.isDisplayed() && element.isEnabled()) {
+                        return element;
+                    }
+                } catch (StaleElementReferenceException ignored) {
+                  
+                }
+            }
+            return null;
+        });
 
-        System.out.println("Submitting enquiry form with empty fields");
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView({block:'center'});", button);
 
-        button.click();
+        System.out.println("Clicking SUBMIT QUERY with empty fields.");
+
+        try {
+            button.click();
+        } catch (ElementClickInterceptedException e) {
+            ((JavascriptExecutor) driver).executeScript("arguments[0].click();", button);
+        }
     }
 
     public void submitEmptyQuery() {
         submitEmptyEnquiryForm();
     }
 
-    // Check required field validation
+    // Validation check
+
     public boolean hasRequiredFieldValidation() {
-        JavascriptExecutor js = (JavascriptExecutor) driver;
+        Object invalidField = ((JavascriptExecutor) driver).executeScript("return Array.from(document.querySelectorAll('input,textarea,select'))"+ ".some(e => e.offsetParent !== null && !e.checkValidity());");
 
-        boolean invalidField = (Boolean) js.executeScript(
-                "return Array.from(document.querySelectorAll('input,textarea,select'))"
-                + ".some(e => e.offsetParent !== null && !e.checkValidity());");
-
-        if (invalidField) {
-            System.out.println("Required field validation detected");
+        if (Boolean.TRUE.equals(invalidField)) {
+            System.out.println("Browser required-field validation detected");
             return true;
         }
 
-        By messages = By.cssSelector(
-                "[role='alert'], [class*='error'], [class*='invalid']");
+        By messages = By.cssSelector("[role='alert'], [class*='error'], [class*='invalid']," + "[class*='errorMessage'], [class*='error_message']");
 
         for (WebElement element : driver.findElements(messages)) {
-            if (element.isDisplayed()
-                    && !element.getText().trim().isEmpty()) {
-
-                System.out.println("Validation message: "
-                        + element.getText().trim());
-
-                return true;
+            try {
+                if (element.isDisplayed() && !element.getText().trim().isEmpty()) {
+                    System.out.println("Validation message: " + element.getText().trim());
+                    return true;
+                }
+            } catch (StaleElementReferenceException ignored) {
             }
         }
 
         return false;
     }
-
     public boolean hasQueryValidationMessages() {
         return hasRequiredFieldValidation();
     }
 
-    // Search for visible text
     public boolean hasAnyText(String... terms) {
         for (String term : terms) {
-            By locator = By.xpath(
-                    "//*[contains(translate(.,"
-                    + "'ABCDEFGHIJKLMNOPQRSTUVWXYZ',"
-                    + "'abcdefghijklmnopqrstuvwxyz'),'"
-                    + term.toLowerCase() + "')]");
-
+            By locator = By.xpath("//*[contains(translate(normalize-space(.),"+ "'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz')," + "'" + term.toLowerCase() + "')]");
             for (WebElement element : driver.findElements(locator)) {
-                if (element.isDisplayed()) {
-                    return true;
+                try {
+                    if (element.isDisplayed()) {
+                        return true;
+                    }
+                } catch (StaleElementReferenceException ignored) {
+                    // Continue checking.
                 }
             }
         }
-
         return false;
     }
 }
